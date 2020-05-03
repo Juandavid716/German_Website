@@ -1,0 +1,19 @@
+.box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    min-height: 200px;
+    width: 280px;
+    box-shadow: -4px 4px 10px rgba(167, 235, 173, 0.12);
+    background-color: rgb(162, 238, 138);
+    margin: 12px;
+    padding: 22px 16px;
+  
+  }
+
+  .pos {
+    display: flex;
+  }
