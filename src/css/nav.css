@@ -1,6 +1,25 @@
-.navbar {
-    width: 100%;
-    background-color: brown;
-    height: 50px;
+@font-face {
+  font-family: "abibasmedium";
+  src: url("../fonts/abibas-webfont.woff") format("woff2"),
+    url("../fonts/abibas-webfont.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
+.navbar {
+  width: 100%;
+  background-color: #5da2e7;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  -webkit-box-shadow: -1px 3px 5px 0px rgba(0, 0, 0, 0.39);
+  -moz-box-shadow: -1px 3px 5px 0px rgba(0, 0, 0, 0.39);
+  box-shadow: -1px 3px 5px 0px rgba(0, 0, 0, 0.39);
+}
+.navbar-sons {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  font-family: "abibasmedium";
+  color: white;
+}
