@@ -1,5 +1,5 @@
-import React from "react";
-import "../css/nav.css";
+import React from 'react';
+import '../css/nav.css';
 
 function Navb() {
   return (
@@ -10,13 +10,6 @@ function Navb() {
           <span> Sustantive</span>
           <span> Adjektive</span>
         </div>
-      </div>
-      <div className="search-bar">
-        <input
-          type="text"
-          className="myInput"
-          placeholder="Search for names.."
-        ></input>
       </div>
     </div>
   );

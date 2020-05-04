@@ -1,5 +1,5 @@
 h2 {
-  font-family: "abibasmedium";
+  font-family: 'abibasmedium';
 }
 html {
   box-sizing: border-box;
@@ -11,7 +11,7 @@ html {
 }
 .box-father {
   width: calc(100% / 3);
-  padding: 1%;
+  padding: 2%;
 }
 .box {
   position: relative;
@@ -47,4 +47,10 @@ html {
 
 .Green {
   background-color: lightgreen;
+}
+
+@media (max-width: 450px) {
+  .box-father {
+    width: 100%;
+  }
 }

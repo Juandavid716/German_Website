@@ -1,31 +1,36 @@
 @font-face {
-  font-family: "abibasmedium";
-  src: url("../fonts/abibas-webfont.woff") format("woff2"),
-    url("../fonts/abibas-webfont.woff2") format("woff");
+  font-family: 'abibasmedium';
+  src: url('../fonts/abibas-webfont.woff') format('woff2'),
+    url('../fonts/abibas-webfont.woff2') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
 .navbar {
   width: 100%;
   background-color: #5da2e7;
-  height: 50px;
+  height: 4em;
   display: flex;
   align-items: center;
-  -webkit-box-shadow: -1px 3px 5px 0px rgba(0, 0, 0, 0.39);
-  -moz-box-shadow: -1px 3px 5px 0px rgba(0, 0, 0, 0.39);
-  box-shadow: -1px 3px 5px 0px rgba(0, 0, 0, 0.39);
+  box-shadow: 0px 5px 10px #d9d9d9;
 }
 .navbar-sons {
   width: 50%;
   display: flex;
   justify-content: space-around;
-  font-family: "abibasmedium";
+  font-family: 'Montserrat';
   color: white;
 }
 
+.navbar-sons span {
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .myInput {
-  background-image: url("../imgs/kindpng_698613\ \(1\).png"); /* Add a search icon to input */
+  background-image: url('../imgs/kindpng_698613\ \(1\).png'); /* Add a search icon to input */
   background-position: 10px 12px; /* Position the search icon */
   background-repeat: no-repeat; /* Do not repeat the icon image */
   background-size: 20px;
