@@ -1,17 +1,42 @@
-import React from 'react';
-import Navb from './components/Navbar';
-import Box from './components/box';
+import React from "react";
+import Navb from "./components/Navbar";
+import Box from "./components/box";
 const cards = [
   {
-    title: 'Hallo',
-    color: 'Blue',
-    text: 'Hola',
+    title: "Der Ort",
+    color: "Blue",
+    text: " Die Orten",
+    traduccion: " El lugar / los lugares",
   },
-  { title: 'Willkommen', color: 'Red', text: 'Bienvenido' },
   {
-    title: 'Danke',
-    color: 'Green',
-    text: 'Gracias',
+    title: "Die Milch",
+    color: "Red",
+    text: "Ohne plural",
+    traduccion: "La leche",
+  },
+  {
+    title: "Das Bier",
+    color: "Green",
+    text: "Die Biere",
+    traduccion: "La cerveza / las cervezas",
+  },
+  {
+    title: "Der Herr",
+    color: "Blue",
+    text: " Die Herren",
+    traduccion: " El señor / los señores",
+  },
+  {
+    title: "Die Frau",
+    color: "Red",
+    text: "Die Frauen",
+    traduccion: "La señora / las señoras",
+  },
+  {
+    title: "Das Alphabet",
+    color: "Green",
+    text: "Die Alphabete",
+    traduccion: "El alfabeto / los alfabetos",
   },
 ];
 function App() {
@@ -21,6 +46,7 @@ function App() {
         title={card.title}
         color={card.color}
         text={card.text}
+        traduccion={card.traduccion}
         key={key}
       ></Box>
     );

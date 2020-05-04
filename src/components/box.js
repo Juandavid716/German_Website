@@ -7,7 +7,12 @@ function Box(props) {
       <div className="box">
         <div className={props.color}>
           <h2> {props.title}</h2>
-          <p>{props.text}</p>
+          <p>
+            <em> {props.text}</em>
+          </p>
+          <p>
+            <b> {props.traduccion}</b>
+          </p>
         </div>
       </div>
     </div>
