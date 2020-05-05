@@ -1,14 +1,20 @@
-import React from "react";
-import "../css/nav.css";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 function Navb() {
   return (
     <div>
       <div className="navbar">
         <div className="navbar-sons">
-          <span> Verben </span>
-          <span> Sustantive</span>
-          <span> Adjektive</span>
+          <NavLink to="/" className="nav-link">
+            Verben
+          </NavLink>
+          <NavLink to="/" className="nav-link">
+            Sustantive
+          </NavLink>
+          <NavLink to="/" className="nav-link">
+            Adjektive
+          </NavLink>
         </div>
       </div>
     </div>

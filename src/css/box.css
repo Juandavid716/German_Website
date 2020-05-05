@@ -49,6 +49,12 @@ html {
   background-color: lightgreen;
 }
 
+@media (max-width: 900px) {
+  .box-father {
+    width: 50%;
+  }
+}
+
 @media (max-width: 450px) {
   .box-father {
     width: 100%;

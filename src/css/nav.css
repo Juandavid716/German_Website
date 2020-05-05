@@ -6,7 +6,12 @@
   font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+
+body {
+  font-family: 'Montserrat';
+  color: #212529;
+}
 
 .navbar {
   width: 100%;
@@ -20,13 +25,13 @@
   width: 50%;
   display: flex;
   justify-content: space-around;
-  font-family: 'Montserrat';
-  color: white;
 }
 
-.navbar-sons span {
+.navbar-sons .nav-link {
   font-size: 18px;
   font-weight: 600;
+  color: white;
+  text-decoration: none;
 }
 
 .myInput {

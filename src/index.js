@@ -1,13 +1,15 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./App";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import './css/nav.css';
+import './css/box.css';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
     <App className="proof" />
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change
