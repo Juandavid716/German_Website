@@ -12,6 +12,38 @@ code {
     monospace;
 }
 
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(./imgs/ansgar-scheffold-mtfTz0FnwBw-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.hero-text {
+  font-weight: 400;
+  width: 50%;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.sustantive-container {
+  padding-top: 4em;
+}
+
 .container {
   width: 95%;
   margin: 0 auto;

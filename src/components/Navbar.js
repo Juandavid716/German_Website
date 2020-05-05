@@ -9,7 +9,7 @@ function Navb() {
           <NavLink to="/" className="nav-link">
             Verben
           </NavLink>
-          <NavLink to="/" className="nav-link">
+          <NavLink to="/sustantive" className="nav-link">
             Sustantive
           </NavLink>
           <NavLink to="/" className="nav-link">

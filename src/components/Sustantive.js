@@ -54,7 +54,7 @@ function Sustantive() {
   });
 
   return (
-    <div>
+    <div className="sustantive-container">
       <section className="container">
         <div className="search-bar">
           <input

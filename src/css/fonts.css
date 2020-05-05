@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'abibasmedium';
+  src: url('../fonts/abibas-webfont.woff') format('woff2'),
+    url('../fonts/abibas-webfont.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,400&display=swap');
