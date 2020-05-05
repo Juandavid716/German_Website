@@ -1,5 +1,5 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Navb() {
   return (
@@ -12,7 +12,7 @@ function Navb() {
           <NavLink to="/sustantive" className="nav-link">
             Sustantive
           </NavLink>
-          <NavLink to="/" className="nav-link">
+          <NavLink to="/adjektive" className="nav-link">
             Adjektive
           </NavLink>
         </div>
