@@ -6,7 +6,7 @@ function Navb() {
     <div>
       <div className="navbar">
         <NavLink className="nav-img" to="/">
-          <img src={iconimg} className="nav-iconimg"/>
+          <img src={iconimg} className="nav-iconimg" alt="Logo" />
         </NavLink>
         <div className="navbar-sons">
           <NavLink to="/verben" className="nav-link">
