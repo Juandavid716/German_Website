@@ -1,5 +1,5 @@
 h2 {
-  font-family: 'abibasmedium';
+  font-family: "abibasmedium";
 }
 html {
   box-sizing: border-box;
@@ -37,6 +37,12 @@ html {
   display: flex;
   flex-wrap: wrap;
 }
+.box-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .Blue {
   background-color: lightblue;
 }
@@ -52,6 +58,9 @@ html {
 @media (max-width: 900px) {
   .box-father {
     width: 50%;
+  }
+  .navbar-sons {
+    flex-grow: 1;
   }
 }
 

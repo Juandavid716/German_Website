@@ -1,7 +1,7 @@
 import React from "react";
 import "../css/box.css";
 
-function Boxadj(props) {
+function Boxver(props) {
   return (
     <div className="box-father">
       <div className="box">
@@ -24,4 +24,4 @@ function Boxadj(props) {
   );
 }
 
-export default Boxadj;
+export default Boxver;

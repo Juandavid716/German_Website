@@ -1,5 +1,5 @@
 import React from "react";
-import Boxadj from "./boxAdj";
+import Boxver from "./boxver";
 
 const cards = [
   {
@@ -13,10 +13,10 @@ const cards = [
   },
 ];
 
-function Adjektive() {
+function Verben() {
   const boxes = cards.map((card, key) => {
     return (
-      <Boxadj
+      <Boxver
         title={card.title}
         mean={card.mean}
         c1={card.c1}
@@ -25,7 +25,7 @@ function Adjektive() {
         c4={card.c4}
         c5={card.c5}
         key={key}
-      ></Boxadj>
+      ></Boxver>
     );
   });
 
@@ -45,4 +45,4 @@ function Adjektive() {
   );
 }
 
-export default Adjektive;
+export default Verben;

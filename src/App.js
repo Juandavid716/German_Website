@@ -3,7 +3,7 @@ import Navb from "./components/Navbar";
 import Sustantive from "./components/Sustantive";
 import Landing from "./components/Landing";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Adjektive from "./components/Adjektive";
+import Verben from "./components/Verben";
 function App() {
   return (
     <Router>
@@ -11,7 +11,7 @@ function App() {
       <Switch>
         <Route path="/" exact component={Landing} />
         <Route path="/sustantive" component={Sustantive}></Route>
-        <Route path="/adjektive" component={Adjektive}></Route>
+        <Route path="/verben" component={Verben}></Route>
       </Switch>
     </Router>
   );

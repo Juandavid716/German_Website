@@ -18,7 +18,15 @@ body {
   display: flex;
   justify-content: space-around;
 }
+.nav-iconimg {
+  height: 100%;
+  width: 100%;
+}
+.nav-img {
+  width: 3%;
 
+  margin-left: 40px;
+}
 .navbar-sons .nav-link {
   font-size: 18px;
   font-weight: 600;

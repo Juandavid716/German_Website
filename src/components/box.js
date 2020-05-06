@@ -5,7 +5,7 @@ function Box(props) {
   return (
     <div className="box-father">
       <div className="box">
-        <div className={props.color}>
+        <div className={`box-text ${props.color}`}>
           <h2> {props.title}</h2>
           <p>
             <em> {props.text}</em>
