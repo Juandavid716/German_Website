@@ -14,13 +14,13 @@ export const Searchbar = (props) => {
         traduccion: karte.traduccion,
       };
     });
+    console.log("xdd ", e);
     if (e !== "") {
       let newList = [];
-
       setWord(e);
 
       newList = oldList.filter((karte) =>
-        karte.title.toLowerCase().includes(word)
+        karte.title.toLowerCase().includes(e.toLowerCase())
       );
 
       setFilterDisplay(newList);
