@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Boxver from "./boxver";
-import { render } from "@testing-library/react";
 
 const cards = [
   {
