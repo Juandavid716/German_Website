@@ -3,17 +3,8 @@ import Box from "./box";
 import { Searchbar } from "./Searchbar";
 import firebase from "firebase/app";
 import "firebase/storage";
+import firebaseConfig from "./fbconfig";
 
-var firebaseConfig = {
-  apiKey: "AIzaSyCx9HEmUqV_aaqiqC6EVa73vWMB9Zk_a_k",
-  authDomain: "imgs-german-site.firebaseapp.com",
-  databaseURL: "https://imgs-german-site.firebaseio.com",
-  projectId: "imgs-german-site",
-  storageBucket: "imgs-german-site.appspot.com",
-  messagingSenderId: "570171886493",
-  appId: "1:570171886493:web:580e228f8c4c726abd7d74",
-  measurementId: "G-3NTB4F3RSG",
-};
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 const storage = firebase.storage();
@@ -107,7 +98,7 @@ export const Sustantive = () => {
       text: "Die Teppiche",
       traduccion: "La alfombra / las alfombras",
       imagen:
-        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/tappich.jpg?alt=media&token=67eef144-f18b-448c-8d68-81e14844151b",
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/teppich.jpg?alt=media&token=0b2387a8-8059-4364-8d41-2858b00e3552",
     },
     {
       title: "Der Sessel",
