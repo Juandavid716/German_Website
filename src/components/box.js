@@ -6,10 +6,11 @@ function Box(props) {
     <div className="box-father">
       <div className="box">
         <div className={`box-text ${props.color}`}>
-          <h2> {props.title}</h2>
+          <h2 className="Title"> {props.title}</h2>
           <p>
             <em> {props.text}</em>
           </p>
+          <img className="img-box" src={props.imagen} />
           <p>
             <b> {props.traduccion}</b>
           </p>

@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import Box from "./box";
+import Highlighter from "react-highlight-words";
+
 export const Searchbar = (props) => {
   const [word, setWord] = useState("");
 
@@ -12,9 +14,10 @@ export const Searchbar = (props) => {
         color: karte.color,
         text: karte.text,
         traduccion: karte.traduccion,
+        imagen: karte.imagen,
       };
     });
-    console.log("xdd ", e);
+
     if (e !== "") {
       let newList = [];
       setWord(e);
@@ -45,6 +48,7 @@ export const Searchbar = (props) => {
                 color={karte.color}
                 text={karte.text}
                 traduccion={karte.traduccion}
+                imagen={karte.imagen}
               ></Box>
             );
           })}
