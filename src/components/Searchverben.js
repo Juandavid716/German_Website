@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Box from "./box";
+import Boxver from "./boxver";
 
-export const Searchbar = (props) => {
+export const Searchverben = (props) => {
   const [word, setWord] = useState("");
 
   const [filterDisplay, setFilterDisplay] = useState(props.karte);
@@ -10,10 +10,13 @@ export const Searchbar = (props) => {
     let oldList = props.karte.map((karte) => {
       return {
         title: karte.title,
+        mean: karte.mean,
+        c1: karte.c1,
+        c2: karte.c2,
+        c3: karte.c3,
+        c4: karte.c4,
+        c5: karte.c5,
         color: karte.color,
-        text: karte.text,
-        traduccion: karte.traduccion,
-        imagen: karte.imagen,
       };
     });
 
@@ -42,13 +45,16 @@ export const Searchbar = (props) => {
         <div className="pos">
           {filterDisplay.map((karte) => {
             return (
-              <Box
+              <Boxver
                 title={karte.title}
+                mean={karte.mean}
+                c1={karte.c1}
+                c2={karte.c2}
+                c3={karte.c3}
+                c4={karte.c4}
+                c5={karte.c5}
                 color={karte.color}
-                text={karte.text}
-                traduccion={karte.traduccion}
-                imagen={karte.imagen}
-              ></Box>
+              ></Boxver>
             );
           })}
         </div>
@@ -57,4 +63,4 @@ export const Searchbar = (props) => {
   );
 };
 
-export default Searchbar;
+export default Searchverben;

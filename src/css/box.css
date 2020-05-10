@@ -54,7 +54,13 @@ html {
 .Green {
   background-color: lightgreen;
 }
+.Rose {
+  background-color: lightpink;
+}
 
+.purple {
+  background-color: lightskyblue;
+}
 @media (max-width: 900px) {
   .box-father {
     width: 50%;

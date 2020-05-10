@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Box from "./box";
+
 import { Searchbar } from "./Searchbar";
 import firebase from "firebase/app";
 import "firebase/storage";
@@ -7,10 +7,8 @@ import firebaseConfig from "./fbconfig";
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-const storage = firebase.storage();
+// const storage = firebase.storage();
 export const Sustantive = () => {
-  const [url, setUrl] = useState("");
-
   const [karte] = useState([
     {
       title: "Der Ort",
