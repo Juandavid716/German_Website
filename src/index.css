@@ -1,18 +1,13 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  color: #212529;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #f7f7f7;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
+/* ============ Landing CSS ============ */
 .hero {
   height: 100vh;
   width: 100%;
@@ -36,10 +31,54 @@ code {
 
 .hero-text {
   font-weight: 400;
-  width: 50%;
+  width: 60%;
   margin: 0;
   font-size: 1.5em;
 }
+
+.landing-container {
+  width: 80%;
+  margin: 4em auto;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 3em 0;
+}
+
+.cards-container div {
+  width: calc(100% / 3);
+  padding: 1em;
+}
+
+.cards-container .card-link {
+  width: 100%;
+  display: inline-block;
+  padding: 2em;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 3px 10px -1px rgba(0, 0, 0, 0.24);
+
+  transition: box-shadow 0.3s ease;
+}
+
+.cards-container .card-link:hover {
+  -webkit-box-shadow: 0px 3px 28px 0px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0px 3px 28px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 3px 28px 0px rgba(0, 0, 0, 0.24);
+}
+
+.card-title {
+  margin: 0 0 0.5em;
+}
+
+/* ============================ */
 
 .sustantive-container {
   padding-top: 4em;
@@ -48,4 +87,24 @@ code {
 .container {
   width: 95%;
   margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .hero-text {
+    width: 80%;
+  }
+
+  .cards-container div {
+    width: calc(100% / 2);
+  }
+}
+
+@media (max-width: 450px) {
+  .hero {
+    font-size: 13px;
+  }
+
+  .cards-container div {
+    width: 100%;
+  }
 }

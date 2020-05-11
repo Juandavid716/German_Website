@@ -1,6 +1,6 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import iconimg from "../imgs/germany_18269.png";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import iconimg from '../imgs/germany_18269.png';
 function Navb() {
   return (
     <div>
@@ -15,7 +15,7 @@ function Navb() {
           <NavLink to="/sustantive" className="nav-link">
             Sustantive
           </NavLink>
-          <NavLink to="/Adjektive" className="nav-link">
+          <NavLink to="/adjektive" className="nav-link">
             Adjektive
           </NavLink>
         </div>

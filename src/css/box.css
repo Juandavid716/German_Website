@@ -1,6 +1,3 @@
-h2 {
-  font-family: "abibasmedium";
-}
 html {
   box-sizing: border-box;
 }
@@ -29,20 +26,28 @@ html {
   border-radius: 5px;
   overflow: hidden;
 }
+
 .box div {
   width: 100%;
   height: 100%;
 }
+
 .pos {
   display: flex;
   flex-wrap: wrap;
 }
+
 .box-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+.box-text h2 {
+  font-family: 'abibasmedium', 'Montserrat', sans-serif;
+}
+
 .Blue {
   background-color: lightblue;
 }
@@ -64,9 +69,6 @@ html {
 @media (max-width: 900px) {
   .box-father {
     width: 50%;
-  }
-  .navbar-sons {
-    flex-grow: 1;
   }
 }
 
