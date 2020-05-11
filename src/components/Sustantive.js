@@ -168,7 +168,7 @@ export const Sustantive = () => {
       text: "Ohne Pl ",
       traduccion: "La fruta",
       imagen:
-        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/fruta.jpg?alt=media&token=18ac4e0f-5730-4645-a7dc-952ff281ef2d",
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/frucht.jpg?alt=media&token=940dda47-3dc3-46a7-88ce-0795adb105ec",
     },
     {
       title: "Die Frucht",
@@ -315,14 +315,6 @@ export const Sustantive = () => {
         "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/wasser.jpg?alt=media&token=a0a56a8a-bdeb-411f-bd05-6bf90d2ce332",
     },
     {
-      title: "Das Wasser",
-      color: "Green",
-      text: "Die Wassers",
-      traduccion: "El agua/ las aguas",
-      imagen:
-        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/wasser.jpg?alt=media&token=a0a56a8a-bdeb-411f-bd05-6bf90d2ce332",
-    },
-    {
       title: "Das Cola",
       color: "Green",
       text: "Die Colas",
@@ -360,7 +352,7 @@ export const Sustantive = () => {
       text: "Die Söhne",
       traduccion: "El hijo/ los hijos",
       imagen:
-        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/sohn.jpg?alt=media&token=bcce4e62-3c7c-41c4-8fca-b00ca6fc260f",
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/sohn.jpg?alt=media&token=a7e896b0-418a-4915-aa36-b7be7b588bd4",
     },
     {
       title: "Das Eis",
