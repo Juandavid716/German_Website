@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Box from "./box";
 
 export const Searchbar = (props) => {
-  const [word, setWord] = useState("");
+  //const [word, setWord] = useState("");
 
   const [filterDisplay, setFilterDisplay] = useState(props.karte);
 
@@ -19,7 +19,7 @@ export const Searchbar = (props) => {
 
     if (e !== "") {
       let newList = [];
-      setWord(e);
+      //setWord(e);
 
       newList = oldList.filter((karte) =>
         karte.title.toLowerCase().includes(e.toLowerCase())

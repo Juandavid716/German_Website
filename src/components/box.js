@@ -10,7 +10,7 @@ function Box(props) {
           <p>
             <em> {props.text}</em>
           </p>
-          <img className="img-box" src={props.imagen} />
+          <img className="img-box" alt={props.title} src={props.imagen} />
           <p>
             <b> {props.traduccion}</b>
           </p>

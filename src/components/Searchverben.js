@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Boxver from "./boxver";
 
 export const Searchverben = (props) => {
-  const [word, setWord] = useState("");
+  // const [word, setWord] = useState("");
 
   const [filterDisplay, setFilterDisplay] = useState(props.karte);
 
@@ -22,7 +22,7 @@ export const Searchverben = (props) => {
 
     if (e !== "") {
       let newList = [];
-      setWord(e);
+      //setWord(e);
 
       newList = oldList.filter((karte) =>
         karte.title.toLowerCase().includes(e.toLowerCase())
