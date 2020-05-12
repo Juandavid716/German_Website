@@ -7,8 +7,8 @@ function Boxver(props) {
       <div className="box">
         <div className={`box-text ${props.color}`}>
           <h1> {props.title}</h1>
-          <h2> {props.c1}</h2>
-          <h3> {props.mean}</h3>
+          <h2> {props.mean}</h2>
+          <h3> {props.c1}</h3>
           <p>
             <em> {props.c2}</em>
           </p>

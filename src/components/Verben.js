@@ -107,9 +107,9 @@ const karte = [
     mean: "Escuchar",
     c1: "Ich höre",
     c2: " Du hörest",
-    c3: "Er/sie/es macht",
-    c4: "Ihr macht",
-    c5: "Wir/Sie machen",
+    c3: "Er/sie/es hört",
+    c4: "Ihr hört",
+    c5: "Wir/Sie hören",
     color: "",
   },
 ];

@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #212529;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -77,7 +77,11 @@ body {
 .card-title {
   margin: 0 0 0.5em;
 }
-
+.slider {
+  width: 100%;
+  background-color: #333333;
+  height: 3px;
+}
 /* ============================ */
 
 .sustantive-container {
