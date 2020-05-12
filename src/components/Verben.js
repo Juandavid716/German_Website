@@ -59,7 +59,7 @@ const karte = [
     c2: " Du möchtest",
     c3: "Er/sie/es möchtet",
     c4: "Ihr möchtet",
-    c5: "Wir/Sie öchten",
+    c5: "Wir/Sie möchten",
     color: "Rose",
   },
   {

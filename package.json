@@ -7,6 +7,7 @@
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
     "firebase": "^7.14.3",
+    "git-pages": "^0.8.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-highlight-words": "^0.16.0",
