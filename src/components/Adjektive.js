@@ -3,20 +3,20 @@ import React, { Component } from "react";
 import { Searchadj } from "./Searchadj";
 const karte = [
   {
-    c1: "Alt / Jung",
-    c2: "Viejo / Joven",
+    c1: "alt / jung",
+    c2: "viejo / joven",
   },
   {
-    c1: "Alt / Jung",
-    c2: "Viejo / Joven",
+    c1: "groß / klein",
+    c2: "grande / pequeño",
   },
   {
-    c1: "Alt / Jung",
-    c2: "Viejo / Joven",
+    c1: "hell / dunkel",
+    c2: "brillante / oscuro",
   },
   {
-    c1: "Alt / Jung",
-    c2: "Viejo / Joven",
+    c1: "lang / kurz",
+    c2: "largo / corto",
   },
 ];
 
