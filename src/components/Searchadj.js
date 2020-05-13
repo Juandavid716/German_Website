@@ -11,7 +11,6 @@ export const Searchadj = (props) => {
       return {
         c1: karte.c1,
         c2: karte.c2,
-        imagen: karte.imagen,
       };
     });
 
@@ -39,13 +38,7 @@ export const Searchadj = (props) => {
       <section className="container">
         <div className="pos">
           {filterDisplay.map((karte) => {
-            return (
-              <Boxadj
-                c1={karte.c1}
-                c2={karte.c2}
-                imagen={karte.imagen}
-              ></Boxadj>
-            );
+            return <Boxadj c1={karte.c1} c2={karte.c2}></Boxadj>;
           })}
         </div>
       </section>

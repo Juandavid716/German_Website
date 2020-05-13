@@ -3,17 +3,12 @@ import "../css/box.css";
 
 function Boxadj(props) {
   return (
-    <div className="box-father">
-      <div className="box">
-        <img className="img-box" alt={props.c1} src={props.imagen} />
-        <div className="father-adj">
-          <div className="texto-adj">
-            <p>
-              <em> {props.c1}</em>
-              <em> {props.c2}</em>
-            </p>
-          </div>
-        </div>
+    <div className="box-father-adj">
+      <div className="box-adj">
+        <h3> {props.c1}</h3>
+        <p>
+          <em> {props.c2}</em>
+        </p>
 
         <p></p>
       </div>
