@@ -45,9 +45,17 @@ html {
 }
 
 .box-text h2 {
-  font-family: 'abibasmedium', 'Montserrat', sans-serif;
+  font-family: "abibasmedium", "Montserrat", sans-serif;
 }
-
+.father-adj {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.texto-adj {
+  width: 50%;
+  justify-content: space-around;
+}
 .Blue {
   background-color: lightblue;
 }
