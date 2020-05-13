@@ -1,5 +1,5 @@
-import React from "react";
-import "../css/box.css";
+import React from 'react';
+import '../css/box.css';
 
 function Boxadj(props) {
   return (
@@ -9,8 +9,6 @@ function Boxadj(props) {
         <p>
           <em> {props.c2}</em>
         </p>
-
-        <p></p>
       </div>
     </div>
   );
