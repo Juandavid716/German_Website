@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Boxver from "./boxver";
+import React, { useState } from 'react';
+import Boxver from './boxver';
 
 export const Searchverben = (props) => {
   // const [word, setWord] = useState("");
@@ -20,7 +20,7 @@ export const Searchverben = (props) => {
       };
     });
 
-    if (e !== "") {
+    if (e !== '') {
       let newList = [];
       //setWord(e);
 
@@ -35,30 +35,29 @@ export const Searchverben = (props) => {
   };
 
   return (
-    <div className="search-bar">
+    <div className="search-bar container">
       <input
         onChange={(e) => handleChange(e.target.value)}
         className="myInput"
         placeholder="Search for names.."
       ></input>
-      <section className="container">
-        <div className="pos">
-          {filterDisplay.map((karte) => {
-            return (
-              <Boxver
-                title={karte.title}
-                mean={karte.mean}
-                c1={karte.c1}
-                c2={karte.c2}
-                c3={karte.c3}
-                c4={karte.c4}
-                c5={karte.c5}
-                color={karte.color}
-              ></Boxver>
-            );
-          })}
-        </div>
-      </section>
+
+      <div className="pos">
+        {filterDisplay.map((karte) => {
+          return (
+            <Boxver
+              title={karte.title}
+              mean={karte.mean}
+              c1={karte.c1}
+              c2={karte.c2}
+              c3={karte.c3}
+              c4={karte.c4}
+              c5={karte.c5}
+              color={karte.color}
+            ></Boxver>
+          );
+        })}
+      </div>
     </div>
   );
 };

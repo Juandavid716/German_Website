@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Boxadj from "./boxadj";
+import React, { useState } from 'react';
+import Boxadj from './boxadj';
 
 export const Searchadj = (props) => {
   // const [word, setWord] = useState("");
@@ -14,7 +14,7 @@ export const Searchadj = (props) => {
       };
     });
 
-    if (e !== "") {
+    if (e !== '') {
       let newList = [];
       //setWord(e);
 
@@ -29,19 +29,17 @@ export const Searchadj = (props) => {
   };
 
   return (
-    <div className="search-bar">
+    <div className="search-bar container">
       <input
         onChange={(e) => handleChange(e.target.value)}
         className="myInput"
         placeholder="Search for names.."
       ></input>
-      <section className="container">
-        <div className="pos">
-          {filterDisplay.map((karte) => {
-            return <Boxadj c1={karte.c1} c2={karte.c2}></Boxadj>;
-          })}
-        </div>
-      </section>
+      <div className="pos">
+        {filterDisplay.map((karte) => {
+          return <Boxadj c1={karte.c1} c2={karte.c2}></Boxadj>;
+        })}
+      </div>
     </div>
   );
 };

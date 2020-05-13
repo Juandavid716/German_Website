@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Box from "./box";
+import React, { useState } from 'react';
+import Box from './box';
 
 export const Searchbar = (props) => {
   //const [word, setWord] = useState("");
@@ -17,7 +17,7 @@ export const Searchbar = (props) => {
       };
     });
 
-    if (e !== "") {
+    if (e !== '') {
       let newList = [];
       //setWord(e);
 
@@ -32,27 +32,25 @@ export const Searchbar = (props) => {
   };
 
   return (
-    <div className="search-bar">
+    <div className="search-bar container">
       <input
         onChange={(e) => handleChange(e.target.value)}
         className="myInput"
         placeholder="Search for names.."
       ></input>
-      <section className="container">
-        <div className="pos">
-          {filterDisplay.map((karte) => {
-            return (
-              <Box
-                title={karte.title}
-                color={karte.color}
-                text={karte.text}
-                traduccion={karte.traduccion}
-                imagen={karte.imagen}
-              ></Box>
-            );
-          })}
-        </div>
-      </section>
+      <div className="pos">
+        {filterDisplay.map((karte) => {
+          return (
+            <Box
+              title={karte.title}
+              color={karte.color}
+              text={karte.text}
+              traduccion={karte.traduccion}
+              imagen={karte.imagen}
+            ></Box>
+          );
+        })}
+      </div>
     </div>
   );
 };

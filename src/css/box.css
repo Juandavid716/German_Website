@@ -24,7 +24,7 @@ html {
   justify-content: flex-start;
   text-align: center;
   min-height: 100px;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   height: 100%;
   -webkit-box-shadow: 0px 11px 28px -7px rgba(0, 0, 0, 0.24);
@@ -109,10 +109,6 @@ html {
 @media (max-width: 900px) {
   .box-father {
     width: 50%;
-  }
-
-  .box-adj {
-    width: 90%;
   }
 
   .box-father-adj {
