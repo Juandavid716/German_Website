@@ -6,24 +6,26 @@ html {
 *:after {
   box-sizing: inherit;
 }
+
 .box-father-adj {
   width: calc(100% / 4);
   padding: 1%;
 }
+
 .box-father {
   width: calc(100% / 3);
   padding: 2%;
 }
 
 .box-adj {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   text-align: center;
   min-height: 100px;
-  width: 60%;
+  width: 80%;
+  margin: 0 auto;
   height: 100%;
   -webkit-box-shadow: 0px 11px 28px -7px rgba(0, 0, 0, 0.24);
   -moz-box-shadow: 0px 11px 28px -7px rgba(0, 0, 0, 0.24);
@@ -64,21 +66,26 @@ html {
   justify-content: center;
   align-items: center;
 }
+
 .box-adj h3 {
-  font-family: "abibasmedium", "Montserrat", sans-serif;
+  font-family: 'abibasmedium', 'Montserrat', sans-serif;
 }
+
 .box-text h2 {
-  font-family: "abibasmedium", "Montserrat", sans-serif;
+  font-family: 'abibasmedium', 'Montserrat', sans-serif;
 }
+
 .father-adj {
   width: 100%;
   display: flex;
   align-items: center;
 }
+
 .texto-adj {
   width: 50%;
   justify-content: space-around;
 }
+
 .Blue {
   background-color: lightblue;
 }
@@ -90,6 +97,7 @@ html {
 .Green {
   background-color: lightgreen;
 }
+
 .Rose {
   background-color: lightpink;
 }
@@ -97,17 +105,35 @@ html {
 .purple {
   background-color: lightskyblue;
 }
+
 @media (max-width: 900px) {
   .box-father {
     width: 50%;
   }
+
+  .box-adj {
+    width: 90%;
+  }
+
+  .box-father-adj {
+    width: calc(100% / 3);
+  }
 }
 
 @media (max-width: 450px) {
+  .search-bar {
+    font-size: 14px;
+  }
+
   .box-father {
     width: 100%;
   }
+
+  .box-father-adj {
+    width: calc(100% / 2);
+  }
 }
+
 .img-box {
   width: 80%;
 }
