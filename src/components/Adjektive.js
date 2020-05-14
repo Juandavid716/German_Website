@@ -18,6 +18,10 @@ const karte = [
     c1: "lang / kurz",
     c2: "largo / corto",
   },
+  {
+    c1: "gemütlich / ungemütlich",
+    c2: "comodo / incomodo",
+  },
 ];
 
 class Adjektive extends Component {
