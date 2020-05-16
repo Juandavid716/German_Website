@@ -83,6 +83,34 @@ body {
   background-color: #333333;
   height: 3px;
 }
+.info-contact {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+}
+
+.git-father .git-button-1{
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  padding: 1em;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  border-radius: 5px;
+
+}
+.git-father div {
+  width: calc(100% / 3);
+  padding: 1em;
+}
+.git-father {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 2em 0;
+}
+
 /* ============================ */
 
 .sustantive-container {

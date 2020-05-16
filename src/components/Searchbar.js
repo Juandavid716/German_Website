@@ -36,7 +36,7 @@ export const Searchbar = (props) => {
       <input
         onChange={(e) => handleChange(e.target.value)}
         className="myInput"
-        placeholder="Search for names.."
+        placeholder="schreibe ein Substantiv.."
       ></input>
       <div className="pos">
         {filterDisplay.map((karte) => {

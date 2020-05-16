@@ -386,6 +386,184 @@ export const Sustantive = () => {
       imagen:
         "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/tochter.jpg?alt=media&token=d8d9012c-73aa-4ba6-b8e0-8085cb3c0599",
     },
+    {
+      title: "Der Balkon",
+      color: "Blue",
+      text: "Die Balkons/Baklone",
+      traduccion: "El balcon / los balcones",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/balkon.jpg?alt=media&token=a063025c-796a-42cd-8dd4-868263b57387",
+    },
+    {
+      title: "Die Tür",
+      color: "Red",
+      text: "Die	Türen",
+      traduccion: "La puerta / las puertas",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/door.jpg?alt=media&token=588f0fcf-e76e-4b52-9ede-cbc27b7ffff7",
+    },
+    {
+      title: "Das Badezimmer",
+      color: "Green",
+      text: "Die Badezimmer",
+      traduccion: "El baño / los baños",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/badezimmer.jpg?alt=media&token=3bc8dbf6-2386-4388-b3c5-9a25460657b5",
+    },
+    {
+      
+      title: "Der Fußboden",
+      color: "Blue",
+      text: "Die Fußböden",
+      traduccion: "El piso /los pisos",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/fussboden.jpg?alt=media&token=1f82a3b8-dcd6-4edc-a010-95425183a44f",
+    },
+    {
+      title: "Der Baum",
+      color: "Blue",
+      text: "Die Bäume",
+      traduccion: "El arbol / los arboles",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/baum.jpg?alt=media&token=14f1466e-0596-44a1-bbbc-797f53dc9680",
+    },
+    {
+      title: "Der	Garten",
+      color: "Blue",
+      text: "Die	Gärten",
+      traduccion: "El jardin / los jardines",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/garten.jpg?alt=media&token=96492bba-29ad-4b78-abc3-5ce1d44c37f8",
+    },
+    {
+      title: "Die Wand",
+      color: "Red",
+      text: "Die	Wände",
+      traduccion: "La pared / las paredes",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/wand.jpg?alt=media&token=d6bfb8b2-7385-44a0-9f2b-3d1840f3807f",
+    },
+    {
+      title: "Das	Zimmer",
+      color: "Green",
+      text: "Die Zimmer",
+      traduccion: "El cuarto /los cuartos",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/zimmer.jpg?alt=media&token=4e24e485-7693-4956-8e0c-20732a3effc3",
+    },
+    {
+      title: "Das	Fenster",
+      color: "Green",
+      text: "Die Fenster",
+      traduccion: "La ventana /las ventanas",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/fenster.jpg?alt=media&token=f94558fe-5a65-4ab6-a0d5-6a8e9bc62914",
+    },
+    {
+      title: "Das	Schlafzimmer",
+      color: "Green",
+      text: "Die	Schlafzimmer",
+      traduccion: "El dormitorio / los dormitorios",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/schlafzimmer.jpg?alt=media&token=57c0f479-9356-46f5-851a-9d938c9460dc",
+    },
+    {
+      title: "Das Flugzeug",
+      color: "Green",
+      text: "Die	Flugzeuge",
+      traduccion: "El avión / los aviones",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/avion.jpg?alt=media&token=06fd91a8-48c6-49c0-b00c-71532cb7f8ce",
+    },
+    {
+      title: "Die	Küche",
+      color: "Red",
+      text: "Die	Küchen",
+      traduccion: "La cocina / las cocinas",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/kuche.jpg?alt=media&token=398d702d-5052-4c65-b2fc-6f072806de0e",
+    },
+    {
+      title: "Das	Wohnzimmer",
+      color: "Green",
+      text: "Die	Wohnzimmer",
+      traduccion: "La sala de estar / Las salas de estar",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/wohnzimmer.jpg?alt=media&token=99f765b8-e7c4-4311-8e9a-4b5141f550cd",
+    },
+    {
+      title: "Das	Fleisch",
+      color: "Green",
+      text: "Das	Fleische",
+      traduccion: "La carne / las carnes",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/fleisch.jpg?alt=media&token=ac2a37c4-7f78-4673-8153-9e521037ae41",
+    },
+    {
+      title: "Das Auto",
+      color: "Green",
+      text: "Die Autos",
+      traduccion: "El auto / los autos",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/Auto.jpg?alt=media&token=ed1d4323-1515-41cd-a8b7-990855ea469f",
+    },
+    {
+      title: "Der Fisch",
+      color: "Blue",
+      text: "Die Fische",
+      traduccion: "El pescado / los pescados",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/fisch.jpg?alt=media&token=198499a8-6dc3-43da-9cce-42c7b03059e1",
+    },
+    {
+      title: "Der	Käse",
+      color: "Blue",
+      text: "Die	Käse",
+      traduccion: "El queso / los quesos",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/kase.jpg?alt=media&token=8504e068-9f8c-4fab-8474-8ab9cce084a5",
+    },
+    {
+      title: "Das Ei",
+      color: "Green",
+      text: "Die Eier",
+      traduccion: "El huevo / los huevos",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/ei.jpg?alt=media&token=20d715aa-5f02-434b-b73a-4a36ee608377",
+    },
+    {
+      title: "Die	Oma/großmütter",
+      color: "Red",
+      text: "Die Omas/großmütter",
+      traduccion: "la abuela / las abuelas",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/oma.jpg?alt=media&token=30010fa0-679b-426b-a45f-4c813b40e072",
+    },
+    {
+      title: "Die Mutter",
+      color: "Red",
+      text: "Die Mütter",
+      traduccion: "La madre / las madres",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/mutter.jpg?alt=media&token=9368596a-94f4-4d1f-a87f-ed5129c2c1f5",
+    },
+    {
+      title: "Der	Opa/großvater",
+      color: "Blue",
+      text: "Die Opas/großväter",
+      traduccion: "El abuelo / los abuelos",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/opa.jpg?alt=media&token=c5fe2150-28a7-4f57-8948-5b3e5a395b5d",
+    },
+    {
+      title: "Der Vater",
+      color: "Blue",
+      text: "die	Väter",
+      traduccion: "El padre / los padres",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/vater.jpg?alt=media&token=2fe3d2a5-95ce-45bc-8a9f-4b3018e2f870",
+    },
+    
   ]);
 
   return (

@@ -39,7 +39,7 @@ export const Searchverben = (props) => {
       <input
         onChange={(e) => handleChange(e.target.value)}
         className="myInput"
-        placeholder="Search for names.."
+        placeholder="schreibe ein Verb.."
       ></input>
 
       <div className="pos">

@@ -22,6 +22,26 @@ const karte = [
     c1: "gemütlich / ungemütlich",
     c2: "comodo / incomodo",
   },
+  {
+    c1: "angenehm /unangenehm ",
+    c2: "agradable /desagradable ",
+  },
+  {
+    c1: "anwesend /abwesend ",
+    c2: "presente /ausente ",
+  },
+  {
+    c1: "bekannt /unbekannt ",
+    c2: "conocido /desconocido ",
+  },
+  {
+    c1: "bequem /unbequem ",
+    c2: "cómodo /incómodo ",
+  },
+  {
+    c1: "breit /eng ",
+    c2: "amplio /ancho ",
+  },
 ];
 
 class Adjektive extends Component {

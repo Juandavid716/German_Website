@@ -33,7 +33,7 @@ export const Searchadj = (props) => {
       <input
         onChange={(e) => handleChange(e.target.value)}
         className="myInput"
-        placeholder="Search for names.."
+        placeholder="schreibe ein Adjektiv.."
       ></input>
       <div className="pos">
         {filterDisplay.map((karte) => {
