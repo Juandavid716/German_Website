@@ -22,7 +22,7 @@ export const Searchbar = (props) => {
       //setWord(e);
 
       newList = oldList.filter((karte) =>
-        karte.title.toLowerCase().includes(e.toLowerCase())
+        karte.title.toLowerCase().includes(e.toLowerCase()) || karte.traduccion.toLowerCase().includes(e.toLowerCase())
       );
 
       setFilterDisplay(newList);

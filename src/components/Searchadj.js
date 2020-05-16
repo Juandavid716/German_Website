@@ -19,7 +19,7 @@ export const Searchadj = (props) => {
       //setWord(e);
 
       newList = oldList.filter((karte) =>
-        karte.c1.toLowerCase().includes(e.toLowerCase())
+        karte.c1.toLowerCase().includes(e.toLowerCase()) || karte.c2.toLowerCase().includes(e.toLowerCase())
       );
 
       setFilterDisplay(newList);
