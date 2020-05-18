@@ -24,8 +24,10 @@ export const Searchverben = (props) => {
       let newList = [];
       //setWord(e);
 
-      newList = oldList.filter((karte) =>
-        karte.title.toLowerCase().includes(e.toLowerCase()) || karte.mean.toLowerCase().includes(e.toLowerCase())
+      newList = oldList.filter(
+        (karte) =>
+          karte.title.toLowerCase().includes(e.toLowerCase()) ||
+          karte.mean.toLowerCase().includes(e.toLowerCase())
       );
 
       setFilterDisplay(newList);
@@ -41,7 +43,10 @@ export const Searchverben = (props) => {
         className="myInput"
         placeholder="schreibe ein Verb.."
       ></input>
-      <div className="bartext"> Anzahl der Verben: {filterDisplay.length} von {props.karte.length}</div>
+      <div className="bartext">
+        {' '}
+        Anzahl der Verben: {filterDisplay.length} von {props.karte.length}
+      </div>
       <div className="pos">
         {filterDisplay.map((karte) => {
           return (
@@ -54,6 +59,7 @@ export const Searchverben = (props) => {
               c4={karte.c4}
               c5={karte.c5}
               color={karte.color}
+              key={karte.title}
             ></Boxver>
           );
         })}

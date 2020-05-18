@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #212529;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -89,7 +89,7 @@ body {
   text-align: center;
 }
 
-.git-father .git-button-1{
+.git-father .git-button-1 {
   width: 100%;
   height: 100%;
   display: inline-block;
@@ -98,8 +98,12 @@ body {
   color: inherit;
   text-align: center;
   border-radius: 5px;
-
 }
+
+.git-button-1 span {
+  margin: 0 1em;
+}
+
 .git-father div {
   width: calc(100% / 3);
   padding: 1em;

@@ -21,8 +21,10 @@ export const Searchbar = (props) => {
       let newList = [];
       //setWord(e);
 
-      newList = oldList.filter((karte) =>
-        karte.title.toLowerCase().includes(e.toLowerCase()) || karte.traduccion.toLowerCase().includes(e.toLowerCase())
+      newList = oldList.filter(
+        (karte) =>
+          karte.title.toLowerCase().includes(e.toLowerCase()) ||
+          karte.traduccion.toLowerCase().includes(e.toLowerCase())
       );
 
       setFilterDisplay(newList);
@@ -38,7 +40,10 @@ export const Searchbar = (props) => {
         className="myInput"
         placeholder="schreibe ein Substantiv.."
       ></input>
-      <div> Anzahl von Substantive: {filterDisplay.length} von {props.karte.length}</div>
+      <div>
+        {' '}
+        Anzahl von Substantive: {filterDisplay.length} von {props.karte.length}
+      </div>
       <div className="pos">
         {filterDisplay.map((karte) => {
           return (
@@ -48,6 +53,7 @@ export const Searchbar = (props) => {
               text={karte.text}
               traduccion={karte.traduccion}
               imagen={karte.imagen}
+              key={karte.title}
             ></Box>
           );
         })}

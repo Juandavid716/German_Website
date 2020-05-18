@@ -18,8 +18,10 @@ export const Searchadj = (props) => {
       let newList = [];
       //setWord(e);
 
-      newList = oldList.filter((karte) =>
-        karte.c1.toLowerCase().includes(e.toLowerCase()) || karte.c2.toLowerCase().includes(e.toLowerCase())
+      newList = oldList.filter(
+        (karte) =>
+          karte.c1.toLowerCase().includes(e.toLowerCase()) ||
+          karte.c2.toLowerCase().includes(e.toLowerCase())
       );
 
       setFilterDisplay(newList);
@@ -35,10 +37,13 @@ export const Searchadj = (props) => {
         className="myInput"
         placeholder="schreibe ein Adjektiv.."
       ></input>
-      <div> Anzahl von Adjektive: {filterDisplay.length} von {props.karte.length}</div>
+      <div>
+        {' '}
+        Anzahl von Adjektive: {filterDisplay.length} von {props.karte.length}
+      </div>
       <div className="pos">
         {filterDisplay.map((karte) => {
-          return <Boxadj c1={karte.c1} c2={karte.c2}></Boxadj>;
+          return <Boxadj c1={karte.c1} c2={karte.c2} key={karte.c1}></Boxadj>;
         })}
       </div>
     </div>
