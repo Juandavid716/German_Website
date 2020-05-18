@@ -35,6 +35,7 @@ export const Searchadj = (props) => {
         className="myInput"
         placeholder="schreibe ein Adjektiv.."
       ></input>
+      <div> Anzahl von Adjektive: {filterDisplay.length} von {props.karte.length}</div>
       <div className="pos">
         {filterDisplay.map((karte) => {
           return <Boxadj c1={karte.c1} c2={karte.c2}></Boxadj>;

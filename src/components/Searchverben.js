@@ -41,7 +41,7 @@ export const Searchverben = (props) => {
         className="myInput"
         placeholder="schreibe ein Verb.."
       ></input>
-
+      <div className="bartext"> Anzahl der Verben: {filterDisplay.length} von {props.karte.length}</div>
       <div className="pos">
         {filterDisplay.map((karte) => {
           return (

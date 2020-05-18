@@ -85,7 +85,9 @@ html {
   width: 50%;
   justify-content: space-around;
 }
-
+.bartext {
+  font-family: 'Montserrat', sans-serif;
+}
 .Blue {
   background-color: lightblue;
 }

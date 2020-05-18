@@ -13,7 +13,7 @@ function Navb() {
             Verben
           </NavLink>
           <NavLink to="/sustantive" className="nav-link">
-            Sustantive
+            Substantive
           </NavLink>
           <NavLink to="/adjektive" className="nav-link">
             Adjektive

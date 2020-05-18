@@ -27,7 +27,7 @@ function Landing() {
           </div>
           <div>
             <Link to="/sustantive" className="card-link">
-              <h3 className="card-title">Sustantive</h3>
+              <h3 className="card-title">Substantive</h3>
               <p>¿Das, Die oder Der? Kein problem!</p>
             </Link>
           </div>

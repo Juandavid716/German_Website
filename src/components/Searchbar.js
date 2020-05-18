@@ -38,6 +38,7 @@ export const Searchbar = (props) => {
         className="myInput"
         placeholder="schreibe ein Substantiv.."
       ></input>
+      <div> Anzahl von Substantive: {filterDisplay.length} von {props.karte.length}</div>
       <div className="pos">
         {filterDisplay.map((karte) => {
           return (
