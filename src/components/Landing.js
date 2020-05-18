@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Landing() {
   return (
@@ -38,22 +38,34 @@ function Landing() {
             </Link>
           </div>
         </article>
-        <div className="slider">
-       
-        </div>
+        <div className="slider"></div>
         <div className="info-contact"> Erstellt von: </div>
         <div className="git-father">
-        <div className ="git-button-1">
-        <a class="github-button" href="https://github.com/juandavid716" aria-label="Follow @juandavid716 on GitHub">Follow @juandavid716</a>
-        <a class="github-button" href="https://github.com/jaravad" aria-label="Follow @jaravad on GitHub">Follow @jaravad</a>
-        <a class="github-button" href="https://github.com/juandavid716/German_Website" data-icon="octicon-star" aria-label="Star juandavid716/German_Website on GitHub">Star</a>
+          <div className="git-button-1">
+            <a
+              className="github-button"
+              href="https://github.com/juandavid716"
+              aria-label="Follow @juandavid716 on GitHub"
+            >
+              Follow @juandavid716
+            </a>
+            <a
+              className="github-button"
+              href="https://github.com/jaravad"
+              aria-label="Follow @jaravad on GitHub"
+            >
+              Follow @jaravad
+            </a>
+            <a
+              class="github-button"
+              href="https://github.com/juandavid716/German_Website"
+              data-icon="octicon-star"
+              aria-label="Star juandavid716/German_Website on GitHub"
+            >
+              Star
+            </a>
+          </div>
         </div>
-        </div>
-        
-        
-
-        
-        
       </section>
     </>
   );

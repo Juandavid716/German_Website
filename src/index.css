@@ -16,6 +16,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   color: white;
   display: flex;
   flex-direction: column;
@@ -81,7 +82,8 @@ body {
 .slider {
   width: 100%;
   background-color: #333333;
-  height: 3px;
+  height: 2px;
+  margin-bottom: 1.5em;
 }
 .info-contact {
   padding-top: 2%;
@@ -101,7 +103,7 @@ body {
 }
 
 .git-button-1 span {
-  margin: 0 1em;
+  margin: 1em;
 }
 
 .git-father div {
@@ -139,6 +141,10 @@ body {
 @media (max-width: 450px) {
   .hero {
     font-size: 13px;
+  }
+
+  .git-button-1 span {
+    display: block;
   }
 
   .cards-container div {
