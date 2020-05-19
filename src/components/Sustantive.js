@@ -236,7 +236,7 @@ export const Sustantive = () => {
     },
     {
       title: "Die Lehrerin",
-      color: "Rose",
+      color: "Red",
       text: "Die Lehrerinnen",
       traduccion: "La profesora / las profesoras",
       imagen:
@@ -562,6 +562,142 @@ export const Sustantive = () => {
       traduccion: "El padre / los padres",
       imagen:
         "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/vater.jpg?alt=media&token=2fe3d2a5-95ce-45bc-8a9f-4b3018e2f870",
+    },
+    {
+      title: "Das Abendessen",
+      color: "Green",
+      text: "Die Abendessen",
+      traduccion: "La cena / las cenas",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/abendessen.jpg?alt=media&token=7d267515-5096-444e-a107-80bc301db504",
+    },
+    {
+      title: "Das	Frühstück",
+      color: "Green",
+      text: "Die	Frühstücke",
+      traduccion: "El desayuno / los desayunos",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/fr%C3%BChstuck.jpg?alt=media&token=84659909-0747-4c68-96fb-5cb6dfe652be",
+    },
+    {
+      title: "Das Huhn",
+      color: "Green",
+      text: "Die Hühner",
+      traduccion: "El pollo / los pollos",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/pollo.jpg?alt=media&token=ae0c29e8-1beb-45c3-8bc6-e9a0b46997f8",
+    },
+    {
+      title: "Das	Brot",
+      color: "Green",
+      text: "Die Brote",
+      traduccion: "El pan/ los panes",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/brot.jpg?alt=media&token=f7c64800-549b-4d4d-8c48-f4ae208d1fb1",
+    },
+    {
+      title: "Die Katze/ Der Kater",
+      color: "Red",
+      text: "Die Katzen / Kater",
+      traduccion: "El gato(a)/ los(a) gatos(a)",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/katze.jpg?alt=media&token=417a3a5c-bbc7-4897-af11-c4ed2f90624c",
+    },
+    {
+      title: "Das Mittagessen",
+      color: "Green",
+      text: "Die Mittagessens",
+      traduccion: "El almuerzo / los almuerzos",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/mittagessen.jpg?alt=media&token=9347b887-3c5f-426f-b7c7-455d744a5e11",
+    },
+    {
+      title: "Das Lied",
+      color: "Green",
+      text: "Die Lieder",
+      traduccion: "La cancion / las canciones",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/lied.jpg?alt=media&token=29907764-93d0-4604-a11d-49761bb7d0b2",
+    },
+    {
+      title: "Der Wagen",
+      color: "Blue",
+      text: "Die Wagen",
+      traduccion: "El carro / los carros",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/wagen.jpg?alt=media&token=e8c087a6-74fa-4112-81b0-f0224ccc351f",
+    },
+    {
+      title: "Der Hund",
+      color: "Blue",
+      text: "Die Hunde",
+      traduccion: "El perro / los perros",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/hund.jpg?alt=media&token=320bae98-4158-4605-8f37-232fde3cc914",
+    },
+    {
+      title: "Der	Bleistift",
+      color: "Blue",
+      text: "Die	Bleistifte",
+      traduccion: "",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/bleistift.jpg?alt=media&token=106cd16d-38df-448b-8c72-98fc0d7b9ebf",
+    },
+    {
+      title: "Die Schule",
+      color: "Red",
+      text: "Die Schulen",
+      traduccion: "La escuela/ las escuelas",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/schule.jpg?alt=media&token=7980df50-af0c-4494-bf34-44c9cf639519",
+    },
+    {
+      title: "Die Liebe",
+      color: "Red",
+      text: "Die Lieben",
+      traduccion: "El amor / los amores",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/liebe.jpg?alt=media&token=f3d6fa54-2819-4c28-a880-72d8a8a5ea77",
+    },
+    {
+      title: "Der	Kühlschrank",
+      color: "Blue",
+      text: "Die	Kühlschränke",
+      traduccion: "La nevera / las neveras",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/k%C3%BChlschrank.jpg?alt=media&token=e86672ec-3f73-403a-9b56-d764b208da9a",
+    },
+    {
+      title: "Die Uhr / Stunde",
+      color: "Red",
+      text: "Die Uhren/ Stunden",
+      traduccion: "La hora / las horas",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/uhrstunde.jpg?alt=media&token=cca7f3b8-c0b0-4643-bd0f-13585de6a550",
+    },
+    {
+      title: "Die	Flasche",
+      color: "Red",
+      text: "Die	Flaschen",
+      traduccion: "La botella/ las botellas",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/flasche.jpg?alt=media&token=c561ae66-e344-412f-89a0-387dddaf0617",
+    },
+    {
+      title: "Das Leben",
+      color: "Green",
+      text: "Die Lebens",
+      traduccion: "La vida / las vidas",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/vida.jpg?alt=media&token=a57eedda-7518-41c6-8679-2e817177798c",
+    },
+    {
+      title: "Der	Geburtstag",
+      color: "Blue",
+      text: "Die	Geburtstage",
+      traduccion: "El cumpleaños/ los cumpleaños",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/geburstag.jpg?alt=media&token=c82103f1-31c0-4bf2-95de-c7ad923a1798",
     },
     
   ]);
