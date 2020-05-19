@@ -639,7 +639,7 @@ export const Sustantive = () => {
       title: "Der	Bleistift",
       color: "Blue",
       text: "Die	Bleistifte",
-      traduccion: "",
+      traduccion: "El lápiz/ los lapices",
       imagen:
         "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/bleistift.jpg?alt=media&token=106cd16d-38df-448b-8c72-98fc0d7b9ebf",
     },
@@ -699,7 +699,14 @@ export const Sustantive = () => {
       imagen:
         "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/geburstag.jpg?alt=media&token=c82103f1-31c0-4bf2-95de-c7ad923a1798",
     },
-    
+    {
+      title: "Der	Bürguer",
+      color: "Blue",
+      text: "Die	",
+      traduccion: "El ciudadano/ los ciudadanos",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/B%C3%BCrguer.jpg?alt=media&token=ee023fd5-14c1-4228-9b2b-395479d1bf32",
+    },
   ]);
 
   return (
