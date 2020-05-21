@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Searchbar } from "./Searchbar";
 //import firebase from 'firebase/app';
 import "firebase/storage";
+
 // import firebaseConfig from "./fbconfig";
 
 // Initialize Firebase
@@ -411,7 +412,6 @@ export const Sustantive = () => {
         "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/badezimmer.jpg?alt=media&token=3bc8dbf6-2386-4388-b3c5-9a25460657b5",
     },
     {
-      
       title: "Der Fußboden",
       color: "Blue",
       text: "Die Fußböden",
@@ -707,6 +707,110 @@ export const Sustantive = () => {
       imagen:
         "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/B%C3%BCrguer.jpg?alt=media&token=ee023fd5-14c1-4228-9b2b-395479d1bf32",
     },
+    // {
+    //   title: "",
+    //   color: "",
+    //   text: "	",
+    //   traduccion: "",
+    //   imagen:
+    //     "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/jahr.jpg?alt=media&token=3ac89e12-fa68-43b2-bced-0f38c6b377ae",
+    // },
+    // {
+    //   title: "",
+    //   color: "",
+    //   text: "	",
+    //   traduccion: "",
+    //   imagen:
+    //     "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/ampel.jpg?alt=media&token=aa7eb80e-0b51-4faa-a838-efdf71b827f6",
+    // },
+    // {
+    //   title: "",
+    //   color: "",
+    //   text: "	",
+    //   traduccion: "",
+    //   imagen:
+    //     "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/geld.jpg?alt=media&token=461b9afa-c836-4320-a270-7b85a137bd8f",
+    // },
+    // {
+    //   title: "",
+    //   color: "",
+    //   text: "	",
+    //   traduccion: "",
+    //   imagen:
+    //     "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/leute.jpg?alt=media&token=0fb0864c-3efe-4c77-86a2-5c4b723e3714",
+    // },
+    // {
+    //   title: "",
+    //   color: "",
+    //   text: "	",
+    //   traduccion: "",
+    //   imagen:
+    //     "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/madchen.jpg?alt=media&token=d2fde517-d6f3-4fcd-a3b1-f614ee67142a",
+    // },
+    // {
+    //   title: "",
+    //   color: "",
+    //   text: "	",
+    //   traduccion: "",
+    //   imagen:
+    //     "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/himmel.jpg?alt=media&token=d13ba81e-8dcc-414e-ae69-0c646d0fce2f",
+    // },
+    // {
+    //   title: "",
+    //   color: "",
+    //   text: "	",
+    //   traduccion: "",
+    //   imagen:
+    //     "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/wohnung.jpg?alt=media&token=3c08d802-d832-4a80-9241-633801daeb03",
+    // },
+    // {
+    //   title: "",
+    //   color: "",
+    //   text: "	",
+    //   traduccion: "",
+    //   imagen:
+    //     "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/junge.jpg?alt=media&token=77d0fb74-44df-4eae-9c0e-4dc5c49883e3",
+    // },
+    // {
+    //   title: "",
+    //   color: "",
+    //   text: "	",
+    //   traduccion: "",
+    //   imagen:
+    //     "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/auge.jpg?alt=media&token=42365920-990e-47a1-9022-41f5bb041675",
+    // },
+    // {
+    //   title: "",
+    //   color: "",
+    //   text: "	",
+    //   traduccion: "",
+    //   imagen:
+    //     "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/pflanzen.jpg?alt=media&token=328d25b4-7ddb-47af-b4bf-ec09a65ae532",
+    // },
+    // {
+    //   title: "",
+    //   color: "",
+    //   text: "	",
+    //   traduccion: "",
+    //   imagen:
+    //     "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/fernseher.jpg?alt=media&token=0d7a1720-0da2-4ea8-958d-0fbdb075a1af",
+    // },
+    // {
+    //   title: "",
+    //   color: "",
+    //   text: "	",
+    //   traduccion: "",
+    //   imagen:
+    //     "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/monat.jpg?alt=media&token=31d6175a-9770-432d-8718-808fb2d55446",
+    // },
+    // {
+    //   title: "",
+    //   color: "",
+    //   text: "	",
+    //   traduccion: "",
+    //   imagen:
+    //     "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/rechnung.jpg?alt=media&token=35ce0805-7138-4390-a95b-f77bf4dbf024",
+    // },
   ]);
 
   return (
