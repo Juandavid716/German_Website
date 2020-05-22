@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import Boxadj from './boxadj';
+import React, { useState } from "react";
+import Boxadj from "./boxadj";
 
 export const Searchadj = (props) => {
   // const [word, setWord] = useState("");
@@ -14,7 +14,7 @@ export const Searchadj = (props) => {
       };
     });
 
-    if (e !== '') {
+    if (e !== "") {
       let newList = [];
       //setWord(e);
 
@@ -38,8 +38,9 @@ export const Searchadj = (props) => {
         placeholder="schreibe ein Adjektiv.."
       ></input>
       <div>
-        {' '}
-        Anzahl von Adjektive: {filterDisplay.length} von {props.karte.length}
+        {" "}
+        Anzahl von Adjektive: {filterDisplay.length * 2} von{" "}
+        {props.karte.length * 2}
       </div>
       <div className="pos">
         {filterDisplay.map((karte) => {

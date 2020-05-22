@@ -8,6 +8,7 @@ export const Searchbar = (props) => {
   const [check, setCheck] = useState(false);
   const [checkDie, setCheckDie] = useState(false);
   const [checkDas, setCheckDas] = useState(false);
+
   const handleChange = (e) => {
     let oldList = props.karte.map((karte) => {
       return {
@@ -57,6 +58,7 @@ export const Searchbar = (props) => {
         setFilterDisplay(newList);
       }
     } else {
+      console.log("hola");
       let tmp = [];
       let oldvaluefinal = [];
       if (check === true || checkDas === true || checkDas === true) {

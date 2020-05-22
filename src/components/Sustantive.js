@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import { Searchbar } from "./Searchbar";
 //import firebase from 'firebase/app';
 import "firebase/storage";
@@ -700,117 +699,117 @@ export const Sustantive = () => {
         "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/geburstag.jpg?alt=media&token=c82103f1-31c0-4bf2-95de-c7ad923a1798",
     },
     {
-      title: "Der	Bürguer",
+      title: "Der	Bürger",
       color: "Blue",
-      text: "Die	",
+      text: "Die Bürger",
       traduccion: "El ciudadano/ los ciudadanos",
       imagen:
         "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/B%C3%BCrguer.jpg?alt=media&token=ee023fd5-14c1-4228-9b2b-395479d1bf32",
     },
-    // {
-    //   title: "",
-    //   color: "",
-    //   text: "	",
-    //   traduccion: "",
-    //   imagen:
-    //     "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/jahr.jpg?alt=media&token=3ac89e12-fa68-43b2-bced-0f38c6b377ae",
-    // },
-    // {
-    //   title: "",
-    //   color: "",
-    //   text: "	",
-    //   traduccion: "",
-    //   imagen:
-    //     "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/ampel.jpg?alt=media&token=aa7eb80e-0b51-4faa-a838-efdf71b827f6",
-    // },
-    // {
-    //   title: "",
-    //   color: "",
-    //   text: "	",
-    //   traduccion: "",
-    //   imagen:
-    //     "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/geld.jpg?alt=media&token=461b9afa-c836-4320-a270-7b85a137bd8f",
-    // },
-    // {
-    //   title: "",
-    //   color: "",
-    //   text: "	",
-    //   traduccion: "",
-    //   imagen:
-    //     "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/leute.jpg?alt=media&token=0fb0864c-3efe-4c77-86a2-5c4b723e3714",
-    // },
-    // {
-    //   title: "",
-    //   color: "",
-    //   text: "	",
-    //   traduccion: "",
-    //   imagen:
-    //     "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/madchen.jpg?alt=media&token=d2fde517-d6f3-4fcd-a3b1-f614ee67142a",
-    // },
-    // {
-    //   title: "",
-    //   color: "",
-    //   text: "	",
-    //   traduccion: "",
-    //   imagen:
-    //     "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/himmel.jpg?alt=media&token=d13ba81e-8dcc-414e-ae69-0c646d0fce2f",
-    // },
-    // {
-    //   title: "",
-    //   color: "",
-    //   text: "	",
-    //   traduccion: "",
-    //   imagen:
-    //     "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/wohnung.jpg?alt=media&token=3c08d802-d832-4a80-9241-633801daeb03",
-    // },
-    // {
-    //   title: "",
-    //   color: "",
-    //   text: "	",
-    //   traduccion: "",
-    //   imagen:
-    //     "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/junge.jpg?alt=media&token=77d0fb74-44df-4eae-9c0e-4dc5c49883e3",
-    // },
-    // {
-    //   title: "",
-    //   color: "",
-    //   text: "	",
-    //   traduccion: "",
-    //   imagen:
-    //     "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/auge.jpg?alt=media&token=42365920-990e-47a1-9022-41f5bb041675",
-    // },
-    // {
-    //   title: "",
-    //   color: "",
-    //   text: "	",
-    //   traduccion: "",
-    //   imagen:
-    //     "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/pflanzen.jpg?alt=media&token=328d25b4-7ddb-47af-b4bf-ec09a65ae532",
-    // },
-    // {
-    //   title: "",
-    //   color: "",
-    //   text: "	",
-    //   traduccion: "",
-    //   imagen:
-    //     "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/fernseher.jpg?alt=media&token=0d7a1720-0da2-4ea8-958d-0fbdb075a1af",
-    // },
-    // {
-    //   title: "",
-    //   color: "",
-    //   text: "	",
-    //   traduccion: "",
-    //   imagen:
-    //     "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/monat.jpg?alt=media&token=31d6175a-9770-432d-8718-808fb2d55446",
-    // },
-    // {
-    //   title: "",
-    //   color: "",
-    //   text: "	",
-    //   traduccion: "",
-    //   imagen:
-    //     "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/rechnung.jpg?alt=media&token=35ce0805-7138-4390-a95b-f77bf4dbf024",
-    // },
+    {
+      title: "Das Jahr",
+      color: "Green",
+      text: "Die Jahre",
+      traduccion: "El año / los años",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/jahr.jpg?alt=media&token=3ac89e12-fa68-43b2-bced-0f38c6b377ae",
+    },
+    {
+      title: "Die Ampel",
+      color: "Red",
+      text: "Die Ampeln",
+      traduccion: "El semáforo / los semáforos",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/ampel.jpg?alt=media&token=aa7eb80e-0b51-4faa-a838-efdf71b827f6",
+    },
+    {
+      title: "Das Geld",
+      color: "Green",
+      text: "Die Gelder",
+      traduccion: "El dinero / los dineros",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/geld.jpg?alt=media&token=461b9afa-c836-4320-a270-7b85a137bd8f",
+    },
+    {
+      title: "Der Mann",
+      color: "Blue",
+      text: "Die Männer / die Leute",
+      traduccion: "El hombre / los hombres",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/leute.jpg?alt=media&token=0fb0864c-3efe-4c77-86a2-5c4b723e3714",
+    },
+    {
+      title: "Das Mädchen",
+      color: "Green",
+      text: "Die Mädchen ",
+      traduccion: "La niña / las niñas",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/madchen.jpg?alt=media&token=d2fde517-d6f3-4fcd-a3b1-f614ee67142a",
+    },
+    {
+      title: "Der	Himmel",
+      color: "Blue",
+      text: "Die Himmel",
+      traduccion: "El cielo / los cielos",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/himmel.jpg?alt=media&token=d13ba81e-8dcc-414e-ae69-0c646d0fce2f",
+    },
+    {
+      title: "Die Wohnung",
+      color: "Red",
+      text: "Die Wohnungen",
+      traduccion: "El apartamento / los apartamentos",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/wohnung.jpg?alt=media&token=3c08d802-d832-4a80-9241-633801daeb03",
+    },
+    {
+      title: "Der	Junge",
+      color: "Blue",
+      text: "Die Jungen	",
+      traduccion: "El muchacho / los muchachos",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/junge.jpg?alt=media&token=77d0fb74-44df-4eae-9c0e-4dc5c49883e3",
+    },
+    {
+      title: "Das Auge",
+      color: "Green",
+      text: "Die Augen",
+      traduccion: "El ojo / los ojos",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/auge.jpg?alt=media&token=42365920-990e-47a1-9022-41f5bb041675",
+    },
+    {
+      title: "Die Pflanze",
+      color: "Red",
+      text: "Die Pflanzen",
+      traduccion: "La planta / las plantas",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/pflanzen.jpg?alt=media&token=328d25b4-7ddb-47af-b4bf-ec09a65ae532",
+    },
+    {
+      title: "Der Fernseher",
+      color: "Blue",
+      text: "Die Fernseher",
+      traduccion: "El televisor / los televisores",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/fernseher.jpg?alt=media&token=0d7a1720-0da2-4ea8-958d-0fbdb075a1af",
+    },
+    {
+      title: "Der Monat",
+      color: "Blue",
+      text: "Die Monate",
+      traduccion: "El mes / los meses",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/monat.jpg?alt=media&token=31d6175a-9770-432d-8718-808fb2d55446",
+    },
+    {
+      title: "Die Rechnung",
+      color: "Red",
+      text: "Die Rechnungen",
+      traduccion: "La cuenta / las cuentas",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/rechnung.jpg?alt=media&token=35ce0805-7138-4390-a95b-f77bf4dbf024",
+    },
   ]);
 
   return (

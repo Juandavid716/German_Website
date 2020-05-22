@@ -31,7 +31,7 @@ const karte = [
     c2: "presente /ausente ",
   },
   {
-    c1: "bekannt /unbekannt ",
+    c1: "bekannt / unbekannt ",
     c2: "conocido /desconocido ",
   },
   {
@@ -39,8 +39,56 @@ const karte = [
     c2: "cómodo /incómodo ",
   },
   {
-    c1: "breit /eng ",
-    c2: "amplio /ancho ",
+    c1: "breit / eng ",
+    c2: "amplio / ancho ",
+  },
+  {
+    c1: "fröhlich / traurig ",
+    c2: "Alegre /Triste ",
+  },
+  {
+    c1: "froh / sauer ",
+    c2: "Contento / enojado ",
+  },
+  {
+    c1: "ganz / kaputt ",
+    c2: "completo / roto ",
+  },
+  {
+    c1: "frei / besetzt ",
+    c2: "libre / ocupado ",
+  },
+  {
+    c1: "heiß / kalt ",
+    c2: "caliente / frio ",
+  },
+  {
+    c1: "gut / schlecht ",
+    c2: "bueno / malo ",
+  },
+  {
+    c1: "glücklich / unglücklich ",
+    c2: "feliz / infeliz ",
+  },
+  {
+    c1: "hungrig / satt ",
+    c2: "hambriento / lleno ",
+  },
+  {
+    c1: "offen / geschlossen ",
+    c2: "abierto / cerrado ",
+  },
+  {
+    c1: "pünktlich / unpünktlich ",
+    c2: "puntual / impuntual ",
+  },
+  {
+    c1: "durstig / gesättigt ",
+    c2: "Sediento / saciado ",
+  },
+  {
+    c1: "nett-schön / hässlich ",
+    c2: "bonito / feo ",
   },
 ];
 
