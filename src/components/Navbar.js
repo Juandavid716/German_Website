@@ -1,6 +1,6 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import iconimg from '../imgs/germany_18269.png';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import iconimg from "../imgs/germany_18269.png";
 function Navb() {
   return (
     <div>
@@ -17,6 +17,9 @@ function Navb() {
           </NavLink>
           <NavLink to="/adjektive" className="nav-link">
             Adjektive
+          </NavLink>
+          <NavLink to="/adverb" className="nav-link">
+            Adverb
           </NavLink>
         </div>
       </div>

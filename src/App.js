@@ -6,17 +6,49 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Verben from "./components/Verben";
 import ScrollToTop from "./components/ScrollToTop";
 import Adjektive from "./components/Adjektive";
+import Adverb from "./components/Adverb";
+
+const Page404 = ({ location }) => (
+  <div className="not-found">
+    <h1>404 ERROR</h1>
+    <h2>
+      Oops! This Page <code>{location.pathname}</code> Could Not Be Found
+    </h2>
+    <p>
+      Sorry but the page you are looking for does not exist, have been removed,
+      name changed or is temporarily unavailable.
+    </p>
+  </div>
+);
 
 function App() {
   return (
     <Router>
       <ScrollToTop />
-      <Navb></Navb>
+
       <Switch>
-        <Route path="/" exact component={Landing} />
-        <Route path="/sustantive" component={Sustantive}></Route>
-        <Route path="/verben" component={Verben}></Route>
-        <Route path="/adjektive" exact component={Adjektive} />
+        <Route exact path="/">
+          <Navb></Navb>
+          <Landing></Landing>
+        </Route>
+
+        <Route exact path="/sustantive">
+          <Navb></Navb>
+          <Sustantive></Sustantive>
+        </Route>
+        <Route exact path="/verben">
+          <Navb></Navb>
+          <Verben></Verben>
+        </Route>
+        <Route exact path="/adjektive">
+          <Navb></Navb>
+          <Adjektive></Adjektive>
+        </Route>
+        <Route exact path="/adverb">
+          <Navb></Navb>
+          <Adverb></Adverb>
+        </Route>
+        <Route component={Page404} />
       </Switch>
     </Router>
   );
