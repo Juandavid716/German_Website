@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #212529;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -116,52 +116,62 @@ body {
   justify-content: space-around;
   margin: 2em 0;
 }
-.tablas-ft {
-  padding-top: 10px;
-  width: 80%;
-}
+
+/* =============tablas============= */
+
 .tablas {
   padding-top: 5px;
-  padding-left: 20px;
   width: 100%;
 }
+
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
-.table-father-adv {
+
+.tables-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   padding-top: 100px;
-  padding-left: 10px;
+  width: 95%;
+  margin: 0 auto;
 }
-.table-father-adv div {
+
+.tables-container .tablas-ft {
   width: calc(100% / 3);
   padding: 1em;
 }
-.title-tables {
+
+.tablas-ft table {
+  font-family: inherit;
+}
+
+.table-title {
   padding-top: 5px;
   padding-bottom: 5px;
   align-items: center;
   justify-content: center;
 }
+
 td,
 th {
-  border: 1px solid #dddddd;
-  text-align: left;
+  border: 1px solid darkgray;
   padding: 8px;
   text-align: center;
-  width: 100%;
 }
 
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+
+/* ============Not found============== */
+
 .not-found {
   padding-left: 10px;
 }
+
 .not-found h1 {
   color: red;
   font-size: 40px;
@@ -185,6 +195,10 @@ tr:nth-child(even) {
   .cards-container div {
     width: calc(100% / 2);
   }
+
+  .tables-container .tablas-ft {
+    width: calc(100% / 2);
+  }
 }
 
 @media (max-width: 450px) {
@@ -197,6 +211,10 @@ tr:nth-child(even) {
   }
 
   .cards-container div {
+    width: 100%;
+  }
+
+  .tables-container .tablas-ft {
     width: 100%;
   }
 }
