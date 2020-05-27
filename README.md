@@ -12,6 +12,7 @@ En este sitio web podrás acceder a diferentes categorias relacionadas con los s
 * Verben
 * Sustantive
 * Adjektive
+* Adverbien
 * Deklination (Muy pronto)
 
 ## Creadores
