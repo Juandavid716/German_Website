@@ -766,7 +766,7 @@ export const Sustantive = () => {
       title: "Der	Junge",
       color: "Blue",
       text: "Die Jungen	",
-      traduccion: "El muchacho / los muchachos",
+      traduccion: "El niño / los niños",
       imagen:
         "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/junge.jpg?alt=media&token=77d0fb74-44df-4eae-9c0e-4dc5c49883e3",
     },
@@ -809,6 +809,278 @@ export const Sustantive = () => {
       traduccion: "La cuenta / las cuentas",
       imagen:
         "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/rechnung.jpg?alt=media&token=35ce0805-7138-4390-a95b-f77bf4dbf024",
+    },
+    {
+      title: "Der Tag",
+      color: "Blue",
+      text: "Die Tage",
+      traduccion: "el día / los días",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/tag.jpg?alt=media&token=2cb73676-5edd-4a06-8bee-9e916b7484a5",
+    },
+    {
+      title: "Die Hand",
+      color: "Red",
+      text: "Die Hände",
+      traduccion: "la mano / las manos",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/hand.jpg?alt=media&token=02282485-2df4-4fda-9341-dd27aab52b7b",
+    },
+    {
+      title: "Der Weg",
+      color: "Blue",
+      text: "Die Wege",
+      traduccion: "la carretera / las carreteras",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/weg.jpg?alt=media&token=771c0259-6213-480d-a085-cca63e1d951c",
+    },
+    {
+      title: "Das Ding",
+      color: "Green",
+      text: "Die Dinge",
+      traduccion: "la cosa / las cosas",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/ding.jpg?alt=media&token=6876a82a-07f0-42e0-8d11-04db525f6aa1",
+    },
+    {
+      title: "Der Kopf",
+      color: "Blue",
+      text: "Die Köpfe",
+      traduccion: "La cabeza / las cabezas",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/kopf.jpg?alt=media&token=e7f801d4-6825-4268-86b8-f28ab8c73831",
+    },
+    {
+      title: "Das Gesicht",
+      color: "Green",
+      text: "Die Gesichter",
+      traduccion: "La cara / las caras",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/gesicht.jpg?alt=media&token=61ecc4a8-70f1-433e-91e9-4c6f5f3f93bc",
+    },
+    {
+      title: "Die Nation",
+      color: "Red",
+      text: "Die Nationen",
+      traduccion: "la nación / las naciones",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/nation.jpg?alt=media&token=786b0746-3153-4c9d-aa80-c1edc211e8f9",
+    },
+    {
+      title: "Die Nacht",
+      color: "Red",
+      text: "Die Nächte",
+      traduccion: "la noche / las noches",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/nacht.jpg?alt=media&token=d98964dc-e500-48fa-92fd-60620b957d46",
+    },
+    {
+      title: "Der Rücken",
+      color: "Blue",
+      text: "Die Rücken",
+      traduccion: "la espalda / las espaldas",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/R%C3%BCcken.jpg?alt=media&token=10d3a7dd-03a2-488f-9eb1-7eb834e0b31b",
+    },
+    {
+      title: "Die Stimme",
+      color: "Red",
+      text: "Die Stimmen",
+      traduccion: "la voz / las voces",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/stimme.jpg?alt=media&token=b1ed2503-c605-4c37-a587-a4faec641ff3",
+    },
+    {
+      title: "Die Seite",
+      color: "Red",
+      text: "Die Seiten",
+      traduccion: "la página / las paginas",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/seite.jpg?alt=media&token=06db6c85-9fcd-4983-9f9d-681a8ca4e9fe",
+    },
+    {
+      title: "Der Arm",
+      color: "Blue",
+      text: "Die Arme",
+      traduccion: "el brazo / los brazos",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/arm.jpg?alt=media&token=163599e2-f266-410f-a6ea-e0b4d90119bb",
+    },
+    {
+      title: "Das Wort",
+      color: "Green",
+      text: "Die Wörter",
+      traduccion: "la palabra / las palabras",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/wort.jpg?alt=media&token=0f418d5d-2ef2-4475-8ca0-7b96f41a8c96",
+    },
+    {
+      title: "Der Moment",
+      color: "Blue",
+      text: "Die Momente",
+      traduccion: "El momento / los momentos",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/moment.jpg?alt=media&token=ea068159-18f3-4c15-a532-40d1a40c1973",
+    },
+    {
+      title: "Das Haar",
+      color: "Green",
+      text: "Die Haare",
+      traduccion: "El pelo / los pelos",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/haar.jpg?alt=media&token=8daa0734-6a57-4e37-be03-2b8fe336c4cb",
+    },
+    {
+      title: "Der Fuß",
+      color: "Blue",
+      text: "Die Fuße",
+      traduccion: "El pie / los pies",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/fu%C3%9F.jpg?alt=media&token=f237a2dc-a46b-49e7-9575-b890b8169bdd",
+    },
+    {
+      title: "Die Licht",
+      color: "Red",
+      text: "Die Lichter",
+      traduccion: "La luz / las luces",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/licht.jpg?alt=media&token=e332b98d-fbde-4439-be36-7dc9cfcfc71b",
+    },
+    {
+      title: "Die Welt",
+      color: "Red",
+      text: "Die Welten",
+      traduccion: "El mundo / los mundos",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/Welt.jpg?alt=media&token=ab87c0d6-dc83-4800-85de-90a904de1e71",
+    },
+    {
+      title: "Der Körper",
+      color: "Blue",
+      text: "Die Körper",
+      traduccion: "El cuerpo / los cuerpos",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/korper.jpg?alt=media&token=10eb1f81-58b0-4b1f-9cce-6261eb5f17ad",
+    },
+    {
+      title: "Die Adresse",
+      color: "Red",
+      text: "Die Adressen",
+      traduccion: "la dirección / las direcciones",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/adresse.jpg?alt=media&token=69dd0b43-1afc-4aa7-a5e4-9195f5b1a785",
+    },
+    {
+      title: "Der morgen",
+      color: "Blue",
+      text: "Die Morgen",
+      traduccion: "la mañana / las mañanas ",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/morgen.jpg?alt=media&token=10cd7ced-6369-4910-8d74-17d158508cb1",
+    },
+    {
+      title: "Die Mauer",
+      color: "Red",
+      text: "Die Mauern",
+      traduccion: "el muro / los muros",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/mauer.jpg?alt=media&token=7763b2e8-34fb-43e7-9232-309b593e2e1e",
+    },
+    {
+      title: "Die Luft",
+      color: "Red",
+      text: "Die Lüfte",
+      traduccion: "el aire / los aires",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/luft.jpg?alt=media&token=5899f81d-cba6-4725-8144-b68408fa263a",
+    },
+    {
+      title: "Das Ende",
+      color: "Green",
+      text: "Die Enden",
+      traduccion: "el fin / los fines",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/ende.jpg?alt=media&token=410c03af-7fbf-4934-98fd-c91e641c1ab4",
+    },
+    {
+      title: "Die Familie",
+      color: "Red",
+      text: "Die Familien",
+      traduccion: "la familia / las familias",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/familie.jpg?alt=media&token=117a9ab6-efdb-49b2-bc32-9cb054e48bdc",
+    },
+    {
+      title: "Die Art",
+      color: "Red",
+      text: "Die Arten",
+      traduccion: "el tipo / los tipos",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/art.jpg?alt=media&token=a55a2477-61ad-4f13-a97f-6cda2e26f3e9",
+    },
+    {
+      title: "Die Minute",
+      color: "Red",
+      text: "Die Minuten",
+      traduccion: "el minuto / los minutos",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/minute.jpg?alt=media&token=3d499687-98c4-43c9-9806-52bdad6af91e",
+    },
+    {
+      title: "Die Geschichte",
+      color: "Red",
+      text: "Die Geschichten",
+      traduccion: "la historia / las historias",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/Geschichte.jpg?alt=media&token=5800e01a-839b-4880-96b7-f35c01f6a500",
+    },
+    {
+      title: "Der Gott",
+      color: "Blue",
+      text: "Die Götter",
+      traduccion: "el dios / los dioses",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/gott.jpg?alt=media&token=a1a1b75c-8a03-40ea-b7ca-cbbddc58d68d",
+    },
+    {
+      title: "Die Schulter",
+      color: "Red",
+      text: "Die Schultern",
+      traduccion: "el hombro / los hombros",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/shulter.jpg?alt=media&token=35a4094f-899f-428c-9f35-8a1cf3b86bf7",
+    },
+    {
+      title: "Der Teil",
+      color: "Blue",
+      text: "Die Teile",
+      traduccion: "la parte / las partes",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/teil.jpg?alt=media&token=d99dcfda-144a-4282-86b0-dfe495362570",
+    },
+    {
+      title: "Der Geist",
+      color: "Blue",
+      text: "Die Geister",
+      traduccion: "la mente / las mentes",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/geist.jpg?alt=media&token=ff2c338d-bf9e-4586-a8cf-a3f2f8828e70",
+    },
+    {
+      title: "Der Finger",
+      color: "Blue",
+      text: "Die Finger",
+      traduccion: "el dedo / los dedos",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/finger.jpg?alt=media&token=0ef3d94f-7efb-4352-a471-0ab01c790470",
+    },
+    {
+      title: "Der Mund",
+      color: "Blue",
+      text: "Die Münder",
+      traduccion: "la boca / las bocas",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/mund.jpg?alt=media&token=5ea5eb03-3901-4e9a-8321-5bc9418b53bf",
     },
   ]);
 
