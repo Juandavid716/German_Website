@@ -80,7 +80,7 @@ html {
 .box-text h1,
 .box-adj h3 {
   letter-spacing: 0.5px;
-  font-family: 'abibasmedium', 'Montserrat', sans-serif;
+  font-family: "abibasmedium", "Montserrat", sans-serif;
 }
 
 .box-text h1,
@@ -100,7 +100,7 @@ html {
   justify-content: space-around;
 }
 .bartext {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .Blue {
   background-color: lightblue;
@@ -120,6 +120,9 @@ html {
 
 .purple {
   background-color: lightskyblue;
+}
+.gray {
+  background-color: lightgray;
 }
 
 @media (max-width: 900px) {
