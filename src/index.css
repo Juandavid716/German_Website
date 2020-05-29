@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #212529;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -177,7 +177,17 @@ tr:nth-child(even) {
   font-size: 40px;
 }
 /* ============================ */
-
+.button-verb {
+  background-color: #333333;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Montserrat";
+}
 .sustantive-container {
   padding-top: 4em;
 }
@@ -185,6 +195,13 @@ tr:nth-child(even) {
 .container {
   width: 95%;
   margin: 0 auto;
+}
+.button-verb {
+  margin-right: 10px;
+  border-radius: 10px;
+}
+.botones-op {
+  margin-bottom: 5px;
 }
 
 @media (max-width: 900px) {
@@ -197,7 +214,7 @@ tr:nth-child(even) {
   }
 
   .tables-container .tablas-ft {
-    width: calc(100% / 2);
+    width: 100%;
   }
 }
 
@@ -211,10 +228,6 @@ tr:nth-child(even) {
   }
 
   .cards-container div {
-    width: 100%;
-  }
-
-  .tables-container .tablas-ft {
     width: 100%;
   }
 }

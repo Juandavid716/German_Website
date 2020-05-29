@@ -532,16 +532,7 @@ const karte = [
     c5: "Wir/Sie geben",
     color: "Rose",
   },
-  {
-    title: "Hatten",
-    mean: "Tener (Präteritum)",
-    c1: "Ich hatte",
-    c2: " Du hattest",
-    c3: "Er/sie/es hatte",
-    c4: "Ihr setzt hattet",
-    c5: "Wir/Sie hatten",
-    color: "",
-  },
+
   {
     title: "Folgen",
     mean: "seguir",

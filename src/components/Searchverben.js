@@ -1,13 +1,35 @@
-import React, { useState } from 'react';
-import Boxver from './boxver';
+import React, { useState } from "react";
+import Boxver from "./boxver";
 
+const prueba = [
+  {
+    title: "Hatten",
+    mean: "Tener (Präteritum)",
+    c1: "Ich hatte",
+    c2: " Du hattest",
+    c3: "Er/sie/es hatte",
+    c4: "Ihr setzt hattet",
+    c5: "Wir/Sie hatten",
+    color: "",
+  },
+];
 export const Searchverben = (props) => {
   // const [word, setWord] = useState("");
 
   const [filterDisplay, setFilterDisplay] = useState(props.karte);
-
+  const [state, setstate] = useState(props.karte);
+  function change(e) {
+    if (e === "Präteritum") {
+      setFilterDisplay(prueba);
+      setstate(prueba);
+    } else if (e === "Präsens") {
+      setFilterDisplay(props.karte);
+      setstate(props.karte);
+    }
+    document.getElementById("search-input").value = "";
+  }
   const handleChange = (e) => {
-    let oldList = props.karte.map((karte) => {
+    let oldList = state.map((karte) => {
       return {
         title: karte.title,
         mean: karte.mean,
@@ -19,8 +41,8 @@ export const Searchverben = (props) => {
         color: karte.color,
       };
     });
-
-    if (e !== '') {
+    console.log(oldList);
+    if (e !== "") {
       let newList = [];
       //setWord(e);
 
@@ -38,15 +60,34 @@ export const Searchverben = (props) => {
 
   return (
     <div className="search-bar container">
+      <div className="botones-op">
+        <button
+          className="button-verb"
+          value="Präteritum"
+          onClick={(e) => change(e.target.value)}
+        >
+          Präteritum
+        </button>
+        <button
+          className="button-verb"
+          value="Präsens"
+          onClick={(e) => change(e.target.value)}
+        >
+          Präsens
+        </button>
+      </div>
+
       <input
+        id="search-input"
         onChange={(e) => handleChange(e.target.value)}
         className="myInput"
         placeholder="schreibe ein Verb.."
       ></input>
       <div className="bartext">
-        {' '}
+        {" "}
         Anzahl der Verben: {filterDisplay.length} von {props.karte.length}
       </div>
+
       <div className="pos">
         {filterDisplay.map((karte) => {
           return (
