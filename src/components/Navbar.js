@@ -1,7 +1,31 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import iconimg from "../imgs/germany_18269.png";
+
+import "firebase/auth";
+import { useFirebaseApp, useUser } from "reactfire";
+
 function Navb() {
+  const user = useUser();
+  const firebase = useFirebaseApp();
+  const logout = async () => {
+    await firebase.auth().signOut();
+  };
+
+  const login = (
+    <>
+      <NavLink to="/login" className="nav-link">
+        Log In
+      </NavLink>
+    </>
+  );
+  // const logexit = (
+  //   <>
+  //     <NavLink to="/" onclick={logout} className="nav-link">
+  //       Log out
+  //     </NavLink>
+  //   </>
+  // );
   return (
     <div>
       <div className="navbar">
@@ -21,6 +45,12 @@ function Navb() {
           <NavLink to="/adverb" className="nav-link">
             Adverb
           </NavLink>
+          {!user && login}{" "}
+          {user && (
+            <NavLink to="/" onClick={logout} className="nav-link">
+              Log out
+            </NavLink>
+          )}
         </div>
       </div>
     </div>

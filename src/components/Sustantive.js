@@ -1082,6 +1082,141 @@ export const Sustantive = () => {
       imagen:
         "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/mund.jpg?alt=media&token=5ea5eb03-3901-4e9a-8321-5bc9418b53bf",
     },
+    {
+      title: "Die Woche",
+      color: "",
+      text: "",
+      traduccion: " / ",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/woche.jpg?alt=media&token=f87dbcad-c919-412a-86b4-6cce4be92175",
+    },
+    {
+      title: "Eltern",
+      color: "",
+      text: "",
+      traduccion: " / ",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/eltern.jpg?alt=media&token=16c3b325-baca-4f59-8aed-793d429aa926",
+    },
+    {
+      title: "",
+      color: "",
+      text: "",
+      traduccion: " / ",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/kurz.jpg?alt=media&token=013cecc0-ef9c-47bd-af42-3aafc0e14af8",
+    },
+    {
+      title: "",
+      color: "",
+      text: "",
+      traduccion: " / ",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/herd.jpg?alt=media&token=67c69402-ce0a-43d8-b153-23df1c3c6cdd",
+    },
+    {
+      title: "",
+      color: "",
+      text: "",
+      traduccion: " / ",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/karte.jpg?alt=media&token=ae04ba4f-29c0-42ab-9104-cd172180fcfb",
+    },
+    {
+      title: "",
+      color: "",
+      text: "",
+      traduccion: " / ",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/ehefrauu.jpg?alt=media&token=f42b9403-dc96-4c11-b4a3-a6f20ed20918",
+    },
+    {
+      title: "",
+      color: "",
+      text: "",
+      traduccion: " / ",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/stipendium.jpg?alt=media&token=2fc9d7f3-6433-4597-bdd7-e06ce42d4587",
+    },
+    {
+      title: "",
+      color: "",
+      text: "",
+      traduccion: " / ",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/computer.jpg?alt=media&token=d0e80233-3e1e-441a-96e5-94d1cdd3f129",
+    },
+    {
+      title: "",
+      color: "",
+      text: "",
+      traduccion: " / ",
+      imagen:
+        "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/heizung.jpg?alt=media&token=e89771a9-2d21-4494-8004-24fc93119be9",
+    },
+    {
+      title: "",
+      color: "",
+      text: "",
+      traduccion: " / ",
+      imagen: "",
+    },
+    {
+      title: "",
+      color: "",
+      text: "",
+      traduccion: " / ",
+      imagen: "",
+    },
+    {
+      title: "",
+      color: "",
+      text: "",
+      traduccion: " / ",
+      imagen: "",
+    },
+    {
+      title: "",
+      color: "",
+      text: "",
+      traduccion: " / ",
+      imagen: "",
+    },
+    {
+      title: "",
+      color: "",
+      text: "",
+      traduccion: " / ",
+      imagen: "",
+    },
+    {
+      title: "",
+      color: "",
+      text: "",
+      traduccion: " / ",
+      imagen: "",
+    },
+    {
+      title: "",
+      color: "",
+      text: "",
+      traduccion: " / ",
+      imagen: "",
+    },
+    {
+      title: "",
+      color: "",
+      text: "",
+      traduccion: " / ",
+      imagen: "",
+    },
+    {
+      title: "",
+      color: "",
+      text: "",
+      traduccion: " / ",
+      imagen: "",
+    },
   ]);
 
   return (

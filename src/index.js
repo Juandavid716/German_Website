@@ -1,16 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './css/fonts.css';
-import './index.css';
-import './css/nav.css';
-import './css/box.css';
-import App from './App';
-
+import React, { Suspense } from "react";
+import ReactDOM from "react-dom";
+import "./css/fonts.css";
+import "./index.css";
+import "./css/nav.css";
+import "./css/box.css";
+import App from "./App";
+import firebaseConfig from "./components/fbconfig";
+import { FirebaseAppProvider } from "reactfire";
 ReactDOM.render(
-  <React.StrictMode>
-    <App className="proof" />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <FirebaseAppProvider firebaseConfig={firebaseConfig}>
+    <React.StrictMode>
+      <Suspense fallback={"Connecting"}>
+        <App className="proof" />
+      </Suspense>
+    </React.StrictMode>
+    ,
+  </FirebaseAppProvider>,
+
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change

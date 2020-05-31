@@ -7,6 +7,7 @@ import Verben from "./components/Verben";
 import ScrollToTop from "./components/ScrollToTop";
 import Adjektive from "./components/Adjektive";
 import Adverb from "./components/Adverb";
+import Auth from "./components/Auth";
 
 const Page404 = ({ location }) => (
   <div className="not-found">
@@ -47,6 +48,10 @@ function App() {
         <Route exact path="/adverb">
           <Navb></Navb>
           <Adverb></Adverb>
+        </Route>
+        <Route exat path="/login">
+          {/* <Navb></Navb> */}
+          <Auth></Auth>
         </Route>
         <Route component={Page404} />
       </Switch>
