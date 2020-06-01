@@ -14,7 +14,7 @@ html {
 
 .box-father {
   width: calc(100% / 3);
-  padding: 2%;
+  padding: 1em;
 }
 
 .box-adj {
@@ -80,7 +80,7 @@ html {
 .box-text h1,
 .box-adj h3 {
   letter-spacing: 0.5px;
-  font-family: "abibasmedium", "Montserrat", sans-serif;
+  font-family: 'abibasmedium', 'Montserrat', sans-serif;
 }
 
 .box-text h1,
@@ -100,7 +100,7 @@ html {
   justify-content: space-around;
 }
 .bartext {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .Blue {
   background-color: lightblue;
