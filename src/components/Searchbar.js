@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Box from "./box";
+import React, { useState } from 'react';
+import Box from './box';
 
 export const Searchbar = (props) => {
   //const [word, setWord] = useState("");
@@ -8,24 +8,24 @@ export const Searchbar = (props) => {
   const [state, setstate] = useState(props.karte);
   let prueba = [];
   function change(e) {
-    if (e === "Der") {
-      console.log("HOLA");
-      prueba = props.karte.filter((karte) => karte.color.includes("Blue"));
+    if (e === 'Der') {
+      console.log('HOLA');
+      prueba = props.karte.filter((karte) => karte.color.includes('Blue'));
       setFilterDisplay(prueba);
       setstate(prueba);
-    } else if (e === "Die") {
-      prueba = props.karte.filter((karte) => karte.color.includes("Red"));
+    } else if (e === 'Die') {
+      prueba = props.karte.filter((karte) => karte.color.includes('Red'));
       setFilterDisplay(prueba);
       setstate(prueba);
-    } else if (e === "Das") {
-      prueba = props.karte.filter((karte) => karte.color.includes("Green"));
+    } else if (e === 'Das') {
+      prueba = props.karte.filter((karte) => karte.color.includes('Green'));
       setFilterDisplay(prueba);
       setstate(prueba);
-    } else if (e === "Alles") {
+    } else if (e === 'Alles') {
       setFilterDisplay(props.karte);
       setstate(props.karte);
     }
-    document.getElementById("search-input").value = "";
+    document.getElementById('search-input').value = '';
   }
   const handleChange = (e) => {
     let oldList = state.map((karte) => {
@@ -38,7 +38,7 @@ export const Searchbar = (props) => {
       };
     });
 
-    if (e !== "") {
+    if (e !== '') {
       let newList = [];
       //setWord(e);
 
@@ -58,28 +58,28 @@ export const Searchbar = (props) => {
     <div className="search-bar container">
       <div className="botones-op">
         <button
-          className="button-sus gray"
+          className="button gray"
           value="Alles"
           onClick={(e) => change(e.target.value)}
         >
           Alles
         </button>
         <button
-          className="button-sus Blue"
+          className="button Blue"
           value="Der"
           onClick={(e) => change(e.target.value)}
         >
           Der Articles
         </button>
         <button
-          className="button-sus Red"
+          className="button Red"
           value="Die"
           onClick={(e) => change(e.target.value)}
         >
           Die articles
         </button>
         <button
-          className="button-sus Green"
+          className="button Green"
           value="Das"
           onClick={(e) => change(e.target.value)}
         >
@@ -94,7 +94,7 @@ export const Searchbar = (props) => {
       ></input>
 
       <div>
-        {" "}
+        {' '}
         Anzahl von Substantive: {filterDisplay.length} von {props.karte.length}
       </div>
       <div className="pos">

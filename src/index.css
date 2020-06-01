@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #212529;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -177,18 +177,12 @@ tr:nth-child(even) {
   font-size: 40px;
 }
 /* ============================ */
+
 .button-verb {
   background-color: #333333;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  font-family: "Montserrat";
 }
-.button-sus {
+
+.button {
   border: none;
   color: white;
   padding: 15px 32px;
@@ -196,7 +190,8 @@ tr:nth-child(even) {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  font-family: "Montserrat";
+  font-family: inherit;
+  border-radius: 5px;
 }
 .sustantive-container {
   padding-top: 4em;
@@ -206,10 +201,12 @@ tr:nth-child(even) {
   width: 95%;
   margin: 0 auto;
 }
+
 .button-verb {
   margin-right: 10px;
   border-radius: 10px;
 }
+
 .botones-op {
   margin-bottom: 5px;
 }
