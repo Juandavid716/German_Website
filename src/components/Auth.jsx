@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import "firebase/auth";
-import { Link } from "react-router-dom";
-import { useFirebaseApp, useUser } from "reactfire";
+import React, { useState } from 'react';
+import 'firebase/auth';
+import { Link } from 'react-router-dom';
+import { useFirebaseApp, useUser } from 'reactfire';
 
 export default (props) => {
-  const [email, setemail] = useState("");
-  const [pass, setpass] = useState("");
+  const [email, setemail] = useState('');
+  const [pass, setpass] = useState('');
   const firebase = useFirebaseApp();
   const user = useUser();
 
@@ -39,8 +39,8 @@ export default (props) => {
               onChange={(e) => setpass(e.target.value)}
               required
             />
-            <Link className="button-verb" to="/" onClick={login}>
-              {" "}
+            <Link className="button-verb button" to="/" onClick={login}>
+              {' '}
               Iniciar sesión
             </Link>
           </form>
