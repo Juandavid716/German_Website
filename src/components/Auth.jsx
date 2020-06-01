@@ -20,31 +20,31 @@ export default (props) => {
   };
 
   return (
-    <div className="back-img">
+    <div>
       {!user && (
-        <div className="">
-          <form className="formulario-auth" action="">
-            <h3> Bienvenido </h3>
-            <label htmlFor="email"> Correo electrónico</label>
-            <input
-              type="email"
-              id="email"
-              onChange={(e) => setemail(e.target.value)}
-              required
-            />
-            <label htmlFor="password">Contraseña </label>
-            <input
-              type="password"
-              id="password"
-              onChange={(e) => setpass(e.target.value)}
-              required
-            />
-            <Link className="button-verb" to="/" onClick={login}>
-              {" "}
-              Iniciar sesión
-            </Link>
-          </form>
+        <div className="formulario-auth">
+          <h3> Bienvenido </h3>
+          <label htmlFor="email"> Correo electrónico</label>
+          <input
+            type="email"
+            id="email"
+            onChange={(e) => setemail(e.target.value)}
+            required
+          />
+          <label htmlFor="password">Contraseña </label>
+          <input
+            type="password"
+            id="password"
+            onChange={(e) => setpass(e.target.value)}
+            required
+          />
+          <button className="button-verb" onClick={login}>
+            Iniciar sesión
+          </button>
         </div>
+      )}{" "}
+      {user && (
+        <button className="button-notlog">Volver al menú principal</button>
       )}
     </div>
   );
