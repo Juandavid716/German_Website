@@ -50,7 +50,6 @@ function App() {
           <Adverb></Adverb>
         </Route>
         <Route exat path="/login">
-          {/* <Navb></Navb> */}
           <Auth></Auth>
         </Route>
         <Route component={Page404} />

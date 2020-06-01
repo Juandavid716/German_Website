@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #212529;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -206,6 +206,10 @@ tr:nth-child(even) {
   margin-right: 10px;
   border-radius: 10px;
 }
+.button-notlog {
+  background-color: #212529;
+  margin: 0 auto;
+}
 
 .botones-op {
   margin-bottom: 5px;
@@ -213,16 +217,23 @@ tr:nth-child(even) {
 /* -------------------- */
 .formulario-auth {
   width: 450px;
-  margin: auto;
+  margin: 0 auto;
   padding: 10px 20px;
   box-sizing: border-box;
-  margin-top: 30px;
 }
 .back-img {
   width: 100%;
   height: 600px;
   margin-top: 0;
   position: relative;
+}
+.auth-div {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-image: url("./imgs/ansgar-scheffold-gGI9zZKMG4g-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
 }
 .formulario-auth input,
 label {

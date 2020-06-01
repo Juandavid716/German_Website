@@ -20,7 +20,7 @@ export default (props) => {
   };
 
   return (
-    <div>
+    <div className="auth-div">
       {!user && (
         <div className="formulario-auth">
           <h3> Bienvenido </h3>
@@ -38,13 +38,15 @@ export default (props) => {
             onChange={(e) => setpass(e.target.value)}
             required
           />
-          <button className="button-verb" onClick={login}>
+          <button className="button-verb button " onClick={login}>
             Iniciar sesión
           </button>
         </div>
-      )}{" "}
+      )}
       {user && (
-        <button className="button-notlog">Volver al menú principal</button>
+        <Link to="/" className="button-notlog button">
+          Volver al menú principal
+        </Link>
       )}
     </div>
   );
