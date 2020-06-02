@@ -7,6 +7,7 @@ import "./css/box.css";
 import App from "./App";
 import firebaseConfig from "./components/fbconfig";
 import { FirebaseAppProvider } from "reactfire";
+
 ReactDOM.render(
   <FirebaseAppProvider firebaseConfig={firebaseConfig}>
     <React.StrictMode>

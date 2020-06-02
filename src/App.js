@@ -8,7 +8,7 @@ import ScrollToTop from "./components/ScrollToTop";
 import Adjektive from "./components/Adjektive";
 import Adverb from "./components/Adverb";
 import Auth from "./components/Auth";
-
+import Form from "./components/form";
 const Page404 = ({ location }) => (
   <div className="not-found">
     <h1>404 ERROR</h1>
@@ -49,8 +49,11 @@ function App() {
           <Navb></Navb>
           <Adverb></Adverb>
         </Route>
-        <Route exat path="/login">
+        <Route exact path="/login">
           <Auth></Auth>
+        </Route>
+        <Route exact path="/addword">
+          <Form></Form>
         </Route>
         <Route component={Page404} />
       </Switch>

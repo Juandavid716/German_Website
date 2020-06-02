@@ -1,7 +1,8 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-
+import React from "react";
+import { Link } from "react-router-dom";
+import { useUser } from "reactfire";
 function Landing() {
+  const user = useUser();
   return (
     <>
       <section className="hero">
@@ -37,6 +38,14 @@ function Landing() {
               <p> Eigenschaften von Objekten</p>
             </Link>
           </div>
+          {user && (
+            <div>
+              <Link to="/addword" className="card-link">
+                <h3 className="card-title">Add formulario</h3>
+                <p> añadir palabras</p>
+              </Link>
+            </div>
+          )}
         </article>
         <div className="slider"></div>
         <div className="info-contact"> Erstellt von: </div>

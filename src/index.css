@@ -221,6 +221,12 @@ tr:nth-child(even) {
   padding: 10px 20px;
   box-sizing: border-box;
 }
+#form-title {
+  text-align: center;
+}
+.box-form {
+  background: rgba(233, 233, 233, 0.5);
+}
 .back-img {
   width: 100%;
   height: 600px;
