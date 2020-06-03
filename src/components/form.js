@@ -8,18 +8,20 @@ export default (props) => {
   return (
     <div className="auth-div">
       {user && (
-        <div className="formulario-auth box-form">
+        <form name="signUpForm" className="formulario-auth box-form">
           <h3 id="form-title"> Añadir palabras! </h3>
           <label htmlFor="text-title"> Titulo: </label>
-          <input type="text" id="text-title" required />
+          <input type="text" id="text-title" name="text-title" required />
           <label htmlFor="text-plural"> Plural: </label>
-          <input type="text" id="text-plural" required />
+          <input type="text" id="text-plural" name="text-plural" required />
           <label for="img">Seleccionar imagen:</label>
           <input type="file" id="img" name="img" accept="image/*"></input>
           <label htmlFor="text-trd"> Traducción: </label>
-          <input type="text" id="text-trd" required />
-          <button className="button-verb button ">Agregar</button>
-        </div>
+          <input type="text" name="" id="text-trd" required />
+          <button type="submit" className="button-verb button ">
+            Agregar
+          </button>
+        </form>
       )}
       {!user && (
         <div></div>
