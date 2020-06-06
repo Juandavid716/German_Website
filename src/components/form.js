@@ -21,9 +21,10 @@ export default (props) => {
     const file = form["img"].files[0];
     const userData = {
       title: form["text-title"].value,
-      plural: form["text-plural"].value,
-      img: "",
+      color: form["text-color"].value,
+      text: form["text-plural"].value,
       traduccion: form["text-trd"].value,
+      imagen: "",
     };
 
     const refStorage = firebase.storage().ref(`images/${file.name}`);
@@ -44,7 +45,7 @@ export default (props) => {
         // Handle successful uploads on complete
         // For instance, get the download URL: https://firebasestorage.googleapis.com/...
         task.snapshot.ref.getDownloadURL().then(function (downloadURL) {
-          userData.img = downloadURL;
+          userData.imagen = downloadURL;
           db.ref(`objetos/${userData.title}`).set(userData);
           console.log("File available at", downloadURL);
           var elements = document.getElementsByTagName("input");
@@ -56,6 +57,7 @@ export default (props) => {
         });
       }
     );
+
     // task.on(
     //   "state_changed",
     //   null,
@@ -90,6 +92,14 @@ export default (props) => {
           <input type="file" id="img" name="img" accept="image/*"></input>
           <label htmlFor="text-trd"> Traducción: </label>
           <input type="text" name="" id="text-trd" required />
+          <label for="cars">Elige un color:</label>
+
+          <select name="text-color" id="text-color">
+            <option value="Blue">Blue</option>
+            <option value="Red">Red</option>
+            <option value="Green">Green</option>
+          </select>
+
           <button type="submit" className="button-verb button ">
             Agregar
           </button>

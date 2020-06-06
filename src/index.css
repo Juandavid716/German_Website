@@ -187,10 +187,6 @@ tr:nth-child(even) {
   max-width: auto;
 }
 
-.button-verb {
-  background-color: #d1d1d1;
-}
-
 .button {
   cursor: pointer;
   border: none;
@@ -204,6 +200,13 @@ tr:nth-child(even) {
   font-family: inherit;
   border-radius: 3px;
   margin: 0 5px 0;
+}
+.button-verb {
+  background-color: #d1d1d1;
+  margin-top: 10px;
+  display: block;
+  margin: 0 auto;
+  align-self: center;
 }
 
 .sustantive-container {

@@ -9,6 +9,7 @@ import Adjektive from "./components/Adjektive";
 import Adverb from "./components/Adverb";
 import Auth from "./components/Auth";
 import Form from "./components/form";
+
 const Page404 = ({ location }) => (
   <div className="not-found">
     <h1>404 ERROR</h1>
