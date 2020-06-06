@@ -1,6 +1,7 @@
 import React from "react";
 import "firebase/auth";
 import "firebase/database";
+import "firebase/storage";
 import firebase from "firebase/app";
 import { useUser } from "reactfire";
 import "./fbconfig";
