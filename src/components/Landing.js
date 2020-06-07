@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { useUser } from 'reactfire';
+import React from "react";
+import { Link } from "react-router-dom";
+import { useUser } from "reactfire";
 function Landing() {
   const user = useUser();
   return (
@@ -52,7 +52,7 @@ function Landing() {
         <div className="git-father">
           <div className="git-button-1">
             <a
-              className="github-button"
+              class="github-button"
               href="https://github.com/juandavid716"
               aria-label="Follow @juandavid716 on GitHub"
             >

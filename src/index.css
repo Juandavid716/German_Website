@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #212529;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -256,7 +256,7 @@ tr:nth-child(even) {
   display: flex;
   align-items: center;
   height: 100vh;
-  background-image: url('./imgs/ansgar-scheffold-gGI9zZKMG4g-unsplash.jpg');
+  background-image: url("./imgs/ansgar-scheffold-gGI9zZKMG4g-unsplash.jpg");
   background-size: cover;
   background-position: center;
 }
