@@ -201,6 +201,9 @@ tr:nth-child(even) {
   border-radius: 3px;
   margin: 0 5px 0;
 }
+.adverb-botons {
+  margin-bottom: 0;
+}
 .button-verb {
   background-color: #d1d1d1;
   margin-top: 10px;

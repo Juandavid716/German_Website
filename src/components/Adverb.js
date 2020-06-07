@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import Table from "./Table";
 const array = [
   {
@@ -139,19 +139,103 @@ const array = [
     ],
   },
 ];
+const prepositions = [
+  {
+    title: "Wechselpräpositionen",
+    wörter: [
+      "an",
+      "in",
+      "auf",
+      "über",
+      "unter",
+      "hinter",
+      "vor",
+      "zwischen",
+      "neben",
+    ],
+    pal: [
+      "en/sobre (vertical)",
+      "en (dentro)",
+      "en/sobre (horizontal)",
+      "sobre/encima",
+      "debajo",
+      "detras",
+      "delante de",
+      "entre",
+      "cerca de (next to)",
+    ],
+  },
+];
+const pronouns = [
+  {
+    title: "Personal pronouns (Nominativ)",
+    wörter: ["ich", "du", "Er", "sie", "es", "wir", "ihr", "sie", "Sie"],
+    pal: [
+      "yo",
+      "tu",
+      "el",
+      "ella",
+      "esto",
+      "nosotros",
+      "ustedes",
+      "ellos",
+      "usted",
+    ],
+  },
+];
+class Adverb extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      array: array,
+    };
+  }
+  change(event) {
+    if (event === "Adverb") {
+      this.setState({ array: array });
+    } else if (event === "Präpositionen") {
+      this.setState({ array: prepositions });
+    } else if (event === "pronouns") {
+      this.setState({ array: pronouns });
+    }
+  }
+  render() {
+    return (
+      <div className="tables-container">
+        <div className="adverb-botons">
+          <button
+            className="button gray button-adv"
+            value="Adverb"
+            onClick={(e) => this.change(e.target.value)}
+          >
+            Adverb
+          </button>
+          <button
+            className="button gray button-adv"
+            value="Präpositionen"
+            onClick={(e) => this.change(e.target.value)}
+          >
+            Präpositionen
+          </button>
+          <button
+            className="button gray button-adv"
+            value="pronouns"
+            onClick={(e) => this.change(e.target.value)}
+          >
+            Pronouns
+          </button>
+        </div>
 
-function Adverb() {
-  return (
-    <div className="tables-container">
-      {array.map((karte, index) => {
-        return (
-          <Table key={index} array={karte}>
-            {" "}
-          </Table>
-        );
-      })}
-    </div>
-  );
+        {this.state.array.map((karte, index) => {
+          return (
+            <Table key={index} array={karte}>
+              {" "}
+            </Table>
+          );
+        })}
+      </div>
+    );
+  }
 }
 
 export default Adverb;
