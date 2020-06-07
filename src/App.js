@@ -1,14 +1,14 @@
-import React from "react";
-import Navb from "./components/Navbar";
-import Sustantive from "./components/Sustantive";
-import Landing from "./components/Landing";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Verben from "./components/Verben";
-import ScrollToTop from "./components/ScrollToTop";
-import Adjektive from "./components/Adjektive";
-import Adverb from "./components/Adverb";
-import Auth from "./components/Auth";
-import Form from "./components/form";
+import React from 'react';
+import Navb from './components/Navbar';
+import Sustantive from './components/Sustantive';
+import Landing from './components/Landing';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Verben from './components/Verben';
+import ScrollToTop from './components/ScrollToTop';
+import Adjektive from './components/Adjektive';
+import Adverb from './components/Adverb';
+import Auth from './components/Auth';
+import Form from './components/form';
 
 const Page404 = ({ location }) => (
   <div className="not-found">

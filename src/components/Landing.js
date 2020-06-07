@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { useUser } from "reactfire";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { useUser } from 'reactfire';
 function Landing() {
   const user = useUser();
   return (
@@ -66,7 +66,7 @@ function Landing() {
               Follow @jaravad
             </a>
             <a
-              class="github-button"
+              className="github-button"
               href="https://github.com/juandavid716/German_Website"
               data-icon="octicon-star"
               aria-label="Star juandavid716/German_Website on GitHub"

@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   color: #212529;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -134,7 +134,7 @@ table {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-top: 100px;
+  padding-top: 20px;
   width: 95%;
   margin: 0 auto;
 }
@@ -201,15 +201,19 @@ tr:nth-child(even) {
   border-radius: 3px;
   margin: 0 5px 0;
 }
+
 .adverb-botons {
+  padding-top: 90px;
   margin-bottom: 0;
 }
+
 .button-verb {
   background-color: #d1d1d1;
   margin-top: 10px;
   display: block;
   margin: 0 auto;
   align-self: center;
+  border-radius: 10px;
 }
 
 .sustantive-container {
@@ -221,10 +225,6 @@ tr:nth-child(even) {
   margin: 0 auto;
 }
 
-.button-verb {
-  margin-right: 10px;
-  border-radius: 10px;
-}
 .button-notlog {
   background-color: #212529;
   margin: 0 auto;
@@ -256,7 +256,7 @@ tr:nth-child(even) {
   display: flex;
   align-items: center;
   height: 100vh;
-  background-image: url("./imgs/ansgar-scheffold-gGI9zZKMG4g-unsplash.jpg");
+  background-image: url('./imgs/ansgar-scheffold-gGI9zZKMG4g-unsplash.jpg');
   background-size: cover;
   background-position: center;
 }
