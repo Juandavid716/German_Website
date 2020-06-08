@@ -136,6 +136,8 @@ html {
   right: 10px;
   bottom: 15px;
   color: red;
+  border: none;
+  background: none;
 }
 @media (max-width: 900px) {
   .box-father {

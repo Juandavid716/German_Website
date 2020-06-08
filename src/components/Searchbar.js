@@ -107,6 +107,7 @@ export const Searchbar = (props) => {
               traduccion={karte.traduccion}
               imagen={karte.imagen}
               key={karte.title}
+              update={props.update}
             ></Box>
           );
         })}

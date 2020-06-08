@@ -11,7 +11,13 @@ function Box(props) {
 
           {user && (
             <div className="delete-button">
-              <span className="material-icons btn-del">delete</span>
+              <button
+                id={props.title}
+                className="material-icons btn-del"
+                onClick={props.update.bind(this)}
+              >
+                delete
+              </button>
             </div>
           )}
           <p>

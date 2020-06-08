@@ -251,7 +251,10 @@ tr:nth-child(even) {
   margin-top: 0;
   position: relative;
 }
-
+#text-tipo {
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
 .auth-div {
   display: flex;
   align-items: center;

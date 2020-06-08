@@ -74,6 +74,10 @@ export default (props) => {
     //   }
     // );
   }
+  function seleccion() {
+    console.log("HOLA");
+  }
+
   return (
     <div className="auth-div">
       {user && (
@@ -84,6 +88,15 @@ export default (props) => {
           onSubmit={prueba}
         >
           <h3 id="form-title"> Añadir palabras! </h3>
+          <label for="text-tipo">Elige el tipo de palabra a agregar:</label>
+          <div className="text-tipo">
+            <select name="text-tipo" id="text-tipo" onChange={seleccion}>
+              <option value="Verbo">Verbo</option>
+              <option value="Sustantivo">Sustantivo</option>
+              <option value="Adjetivo">Adjetivo</option>
+            </select>
+          </div>
+
           <label htmlFor="text-title"> Titulo: </label>
 
           <input type="text" id="text-title" name="text-title" required />

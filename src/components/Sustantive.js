@@ -1,5 +1,6 @@
 import "firebase/database";
 import firebase from "firebase/app";
+
 import { Searchbar } from "./Searchbar";
 import React, { Component } from "react";
 
@@ -1084,6 +1085,7 @@ class App extends Component {
       ],
     };
   }
+
   componentDidMount() {
     this.fetchData();
   }
@@ -1108,11 +1110,20 @@ class App extends Component {
       this.setState(stateCopy);
     });
   };
+  updateArray(e) {
+    //this.fetchData();
+    // nombre del BOX console.log(e.currentTarget.id);
+
+    const db = firebase.database();
+
+    db.ref(`objetos/${e.currentTarget.id}`).remove();
+    window.location.reload();
+  }
   render() {
     return (
       <div className="sustantive-container">
         {console.log(this.state.list)}
-        <Searchbar karte={this.state.list} />;
+        <Searchbar karte={this.state.list} update={this.updateArray} />;
       </div>
     );
   }
