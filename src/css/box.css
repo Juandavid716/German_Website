@@ -80,7 +80,7 @@ html {
 .box-text h1,
 .box-adj h3 {
   letter-spacing: 0.5px;
-  font-family: 'abibasmedium', 'Montserrat', sans-serif;
+  font-family: "abibasmedium", "Montserrat", sans-serif;
 }
 
 .box-text h1,
@@ -100,7 +100,7 @@ html {
   justify-content: space-around;
 }
 .bartext {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .Blue {
   background-color: lightblue;
@@ -124,7 +124,19 @@ html {
 .gray {
   background-color: lightgray;
 }
-
+.delete-button {
+  margin-bottom: 0;
+  position: relative;
+}
+.Title {
+  margin-bottom: 0;
+}
+.btn-del {
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+  color: red;
+}
 @media (max-width: 900px) {
   .box-father {
     width: 50%;
@@ -152,7 +164,4 @@ html {
 .img-box {
   width: 80%;
   margin-bottom: 1em;
-}
-.Title {
-  margin-bottom: 0;
 }
