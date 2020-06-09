@@ -17,7 +17,7 @@
     "react-scripts": "3.4.1",
     "reactfire": "^2.0.3",
     "style-component": "0.0.1",
-    "sweetalert2": "^9.14.3"
+    "sweetalert2": "^9.14.4"
   },
   "scripts": {
     "start": "react-scripts start",

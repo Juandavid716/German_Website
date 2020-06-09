@@ -74,8 +74,9 @@ export default (props) => {
     //   }
     // );
   }
-  function seleccion() {
-    console.log("HOLA");
+  function seleccion(e) {
+    if (e.target.value === "Verbo") {
+    }
   }
 
   return (
