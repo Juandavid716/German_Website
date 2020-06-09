@@ -16,7 +16,8 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
     "reactfire": "^2.0.3",
-    "style-component": "0.0.1"
+    "style-component": "0.0.1",
+    "sweetalert2": "^9.14.3"
   },
   "scripts": {
     "start": "react-scripts start",
