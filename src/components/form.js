@@ -61,6 +61,26 @@ export default (props) => {
       }
     );
   }
+  function addAdj(e) {
+    e.preventDefault();
+    const form = document.forms[0];
+
+    //event.preventDefault();
+    //var nameValue = document.getElementById("text-title").value;
+
+    const userData = {
+      c1: form["text-c1"].value,
+      c2: form["text-c2"].value,
+    };
+
+    db.ref(`adj/${userData.title}`).set(userData);
+    var elements = document.getElementsByTagName("input");
+    for (var ii = 0; ii < elements.length; ii++) {
+      if (elements[ii].type === "text") {
+        elements[ii].value = "";
+      }
+    }
+  }
   function addVerb(e) {
     e.preventDefault();
     const form = document.forms[0];
@@ -71,11 +91,11 @@ export default (props) => {
     const userData = {
       title: form["text-title-verb"].value,
       mean: form["text-mean"].value,
-      c1: form["text-ich"].value,
-      c2: form["text-du"].value,
-      c3: form["text-er"].value,
-      c4: form["text-ihr"].value,
-      c5: form["text-wir"].value,
+      c1: "Ich " + form["text-ich"].value,
+      c2: "Du " + form["text-du"].value,
+      c3: "Er/sie/es " + form["text-er"].value,
+      c4: "Ihr " + form["text-ihr"].value,
+      c5: "Wir/Sie " + form["text-wir"].value,
       color: form["text-color-verb"].value,
     };
 
@@ -96,7 +116,7 @@ export default (props) => {
     } else if (e === "Sustantivo") {
       setverb({ adj: false, verb: false, sus: true });
     } else if (e === "Adjetivo") {
-      setverb({ adj: true, verb: false, sus: true });
+      setverb({ adj: true, verb: false, sus: false });
     }
   }
 
@@ -189,9 +209,10 @@ export default (props) => {
             <label htmlFor="text-wir"> wir/Sie: </label>
             <input type="text-wir" name="text-wir" id="text-wir" required />
             <select name="text-color-verb" id="text-color-verb">
-              <option value="Blue">Blue</option>
-              <option value="Red">Red</option>
+              <option value="purple">purple</option>
+              <option value="Rose">Rose</option>
               <option value="Green">Green</option>
+              <option value=""></option>
             </select>
             <button type="submit" className="button-verb button ">
               Agregar
@@ -199,6 +220,40 @@ export default (props) => {
           </form>
         </div>
         //<Route component={Page404} />
+      )}{" "}
+      {user && verb.adj && (
+        <div className="auth-div">
+          <form
+            id="form-name"
+            name="form-name"
+            className="formulario-auth box-form"
+            onSubmit={addAdj}
+          >
+            <h3 id="form-title"> Añadir palabras! </h3>
+            <label for="text-tipo">Elige el tipo de palabra a agregar:</label>
+            <div className="text-tipo">
+              <select
+                name="text-tipo"
+                id="text-tipo"
+                onChange={(e) => seleccion(e.target.value)}
+              >
+                <option value="Verbo">Verbo</option>
+                <option value="Sustantivo">Sustantivo</option>
+                <option value="Adjetivo">Adjetivo</option>
+              </select>
+            </div>
+
+            <label htmlFor="text-c1"> Adjetivo: </label>
+            <input type="text-c1" id="text-c1" name="text-c1" required />
+
+            <label htmlFor="text-c2"> Traduccion: </label>
+            <input type="text-c2" id="text-c2" name="text-c2" required />
+
+            <button type="submit" className="button-verb button ">
+              Agregar
+            </button>
+          </form>
+        </div>
       )}
     </div>
   );

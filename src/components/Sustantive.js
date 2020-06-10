@@ -1137,7 +1137,6 @@ class App extends Component {
   render() {
     return (
       <div className="sustantive-container">
-        {console.log(this.state.list)}
         <Searchbar karte={this.state.list} update={this.updateArray} />;
       </div>
     );
