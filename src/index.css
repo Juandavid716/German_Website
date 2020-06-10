@@ -263,7 +263,9 @@ tr:nth-child(even) {
   background-size: cover;
   background-position: center;
 }
-
+.prueba-cambio {
+  height: 150vh;
+}
 .formulario-auth input,
 label {
   width: 100%;

@@ -1,18 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "firebase/auth";
 import "firebase/database";
 import "firebase/storage";
 import firebase from "firebase/app";
 import { useUser } from "reactfire";
 import "./fbconfig";
+
 //import "./storagefiles";
 export default (props) => {
+  const [verb, setverb] = useState({ adj: false, verb: false, sus: true });
   const user = useUser();
   //const firebase = useFirebaseApp();
   //const auth = firebase.auth();
   const db = firebase.database();
 
-  function prueba(e) {
+  function addSus(e) {
     e.preventDefault();
     const form = document.forms[0];
 
@@ -58,70 +60,144 @@ export default (props) => {
         });
       }
     );
+  }
+  function addVerb(e) {
+    e.preventDefault();
+    const form = document.forms[0];
 
-    // task.on(
-    //   "state_changed",
-    //   null,
-    //   (err) => {
-    //     console.log(err);
-    //   },
-    //   () => {
-    //     task.snapshot.ref.getDownloadURL().then((url) => {
-    //       alert(url);
-    //       userData.img = url;
-    //       db.ref("/objetos/").set(userData);
-    //     });
-    //   }
-    // );
+    //event.preventDefault();
+    //var nameValue = document.getElementById("text-title").value;
+
+    const userData = {
+      title: form["text-title-verb"].value,
+      mean: form["text-mean"].value,
+      c1: form["text-ich"].value,
+      c2: form["text-du"].value,
+      c3: form["text-er"].value,
+      c4: form["text-ihr"].value,
+      c5: form["text-wir"].value,
+      color: form["text-color-verb"].value,
+    };
+
+    db.ref(`verbos/${userData.title}`).set(userData);
+    var elements = document.getElementsByTagName("input");
+    for (var ii = 0; ii < elements.length; ii++) {
+      if (elements[ii].type === "text") {
+        elements[ii].value = "";
+      }
+    }
   }
   function seleccion(e) {
-    if (e.target.value === "Verbo") {
+    //console.log(e);
+
+    if (e === "Verbo") {
+      setverb({ adj: false, verb: true, sus: false });
+      console.log(true);
+    } else if (e === "Sustantivo") {
+      setverb({ adj: false, verb: false, sus: true });
+    } else if (e === "Adjetivo") {
+      setverb({ adj: true, verb: false, sus: true });
     }
   }
 
   return (
-    <div className="auth-div">
-      {user && (
-        <form
-          id="form-name"
-          name="form-name"
-          className="formulario-auth box-form"
-          onSubmit={prueba}
-        >
-          <h3 id="form-title"> Añadir palabras! </h3>
-          <label for="text-tipo">Elige el tipo de palabra a agregar:</label>
-          <div className="text-tipo">
-            <select name="text-tipo" id="text-tipo" onChange={seleccion}>
-              <option value="Verbo">Verbo</option>
-              <option value="Sustantivo">Sustantivo</option>
-              <option value="Adjetivo">Adjetivo</option>
+    <div className="">
+      {user && verb.sus && (
+        <div className="auth-div">
+          <form
+            id="form-name"
+            name="form-name"
+            className="formulario-auth box-form"
+            onSubmit={addSus}
+          >
+            <h3 id="form-title"> Añadir palabras! </h3>
+            <label for="text-tipo">Elige el tipo de palabra a agregar:</label>
+            <div className="text-tipo">
+              <select
+                name="text-tipo"
+                id="text-tipo"
+                onChange={(e) => seleccion(e.target.value)}
+              >
+                <option value="Sustantivo">Sustantivo</option>
+                <option value="Verbo">Verbo</option>
+                <option value="Adjetivo">Adjetivo</option>
+              </select>
+            </div>
+
+            <label htmlFor="text-title"> Titulo: </label>
+
+            <input type="text" id="text-title" name="text-title" required />
+            <label htmlFor="text-plural"> Plural: </label>
+            <input type="text" id="text-plural" name="text-plural" required />
+            <label for="img">Seleccionar imagen:</label>
+            <input type="file" id="img" name="img" accept="image/*"></input>
+            <label htmlFor="text-trd"> Traducción: </label>
+            <input type="text" name="" id="text-trd" required />
+            <label for="cars">Elige un color:</label>
+
+            <select name="text-color" id="text-color">
+              <option value="Blue">Blue</option>
+              <option value="Red">Red</option>
+              <option value="Green">Green</option>
             </select>
-          </div>
 
-          <label htmlFor="text-title"> Titulo: </label>
-
-          <input type="text" id="text-title" name="text-title" required />
-          <label htmlFor="text-plural"> Plural: </label>
-          <input type="text" id="text-plural" name="text-plural" required />
-          <label for="img">Seleccionar imagen:</label>
-          <input type="file" id="img" name="img" accept="image/*"></input>
-          <label htmlFor="text-trd"> Traducción: </label>
-          <input type="text" name="" id="text-trd" required />
-          <label for="cars">Elige un color:</label>
-
-          <select name="text-color" id="text-color">
-            <option value="Blue">Blue</option>
-            <option value="Red">Red</option>
-            <option value="Green">Green</option>
-          </select>
-
-          <button type="submit" className="button-verb button ">
-            Agregar
-          </button>
-        </form>
+            <button type="submit" className="button-verb button ">
+              Agregar
+            </button>
+          </form>
+        </div>
       )}
-      {!user && (
-        <div></div>
+      {user && verb.verb && (
+        <div className="auth-div">
+          <form
+            id="form-name"
+            name="form-name"
+            className="formulario-auth box-form"
+            onSubmit={addVerb}
+          >
+            <h3 id="form-title"> Añadir palabras! </h3>
+            <label for="text-tipo">Elige el tipo de palabra a agregar:</label>
+            <div className="text-tipo">
+              <select
+                name="text-tipo"
+                id="text-tipo"
+                onChange={(e) => seleccion(e.target.value)}
+              >
+                <option value="Verbo">Verbo</option>
+                <option value="Sustantivo">Sustantivo</option>
+                <option value="Adjetivo">Adjetivo</option>
+              </select>
+            </div>
+            <label htmlFor="text-title-verb"> Titulo: </label>
+            <input
+              type="text-title-verb"
+              id="text-title-verb"
+              name="text-title-verb"
+              required
+            />
+            <label htmlFor="text-mean"> Significado: </label>
+            <input type="text-mean" id="text-mean" name="text-mean" required />
+
+            <label htmlFor="text-ich"> ich: </label>
+            <input type="text-ich" id="text-ich" name="text-ich" required />
+            <label htmlFor="text-du"> du: </label>
+            <input type="text-du" id="text-du" name="text-du" required />
+            <label htmlFor="text-er"> er/sie/es: </label>
+            <input type="text-er" id="text-er" name="text-er" required />
+            <label htmlFor="text-ihr"> ihr: </label>
+            <input type="text-ihr" name="text-ihr" id="text-ihr" required />
+            <label htmlFor="text-wir"> wir/Sie: </label>
+            <input type="text-wir" name="text-wir" id="text-wir" required />
+            <select name="text-color-verb" id="text-color-verb">
+              <option value="Blue">Blue</option>
+              <option value="Red">Red</option>
+              <option value="Green">Green</option>
+            </select>
+            <button type="submit" className="button-verb button ">
+              Agregar
+            </button>
+          </form>
+        </div>
         //<Route component={Page404} />
       )}
     </div>
