@@ -53,7 +53,7 @@ class Verben extends Component {
           c1: "Ich kann",
           c2: " Du kannst",
           c3: "Er/sie/es kann",
-          c4: "Ihr könt",
+          c4: "Ihr könnt",
           c5: "Wir/Sie können",
           color: "Rose",
         },
