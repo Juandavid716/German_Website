@@ -261,7 +261,7 @@ class App extends Component {
         {
           title: "Das Hotel",
           color: "Green",
-          text: "Das Hotels",
+          text: "Die Hotels",
           traduccion: "El hotel / los hoteles",
           imagen:
             "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/hotel.jpg?alt=media&token=fc24c1fd-df1d-4aee-b71b-1ecfe3cea958",
