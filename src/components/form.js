@@ -121,7 +121,7 @@ export default (props) => {
   }
 
   return (
-    <div className="">
+    <div>
       {user && verb.sus && (
         <div className="auth-div">
           <form
@@ -131,29 +131,30 @@ export default (props) => {
             onSubmit={addSus}
           >
             <h3 id="form-title"> Añadir palabras! </h3>
-            <label for="text-tipo">Elige el tipo de palabra a agregar:</label>
-            <div className="text-tipo">
-              <select
-                name="text-tipo"
-                id="text-tipo"
-                onChange={(e) => seleccion(e.target.value)}
-              >
-                <option value="Sustantivo">Sustantivo</option>
-                <option value="Verbo">Verbo</option>
-                <option value="Adjetivo">Adjetivo</option>
-              </select>
-            </div>
+            <label htmlFor="text-tipo-1">
+              Elige el tipo de palabra a agregar:
+            </label>
+
+            <select
+              name="text-tipo"
+              id="text-tipo-1"
+              onChange={(e) => seleccion(e.target.value)}
+            >
+              <option value="Sustantivo">Sustantivo</option>
+              <option value="Verbo">Verbo</option>
+              <option value="Adjetivo">Adjetivo</option>
+            </select>
 
             <label htmlFor="text-title"> Titulo: </label>
 
             <input type="text" id="text-title" name="text-title" required />
             <label htmlFor="text-plural"> Plural: </label>
             <input type="text" id="text-plural" name="text-plural" required />
-            <label for="img">Seleccionar imagen:</label>
+            <label htmlFor="img">Seleccionar imagen:</label>
             <input type="file" id="img" name="img" accept="image/*"></input>
             <label htmlFor="text-trd"> Traducción: </label>
             <input type="text" name="" id="text-trd" required />
-            <label for="cars">Elige un color:</label>
+            <label htmlFor="text-color">Elige un color:</label>
 
             <select name="text-color" id="text-color">
               <option value="Blue">Blue</option>
@@ -176,44 +177,51 @@ export default (props) => {
             onSubmit={addVerb}
           >
             <h3 id="form-title"> Añadir palabras! </h3>
-            <label for="text-tipo">Elige el tipo de palabra a agregar:</label>
-            <div className="text-tipo">
-              <select
-                name="text-tipo"
-                id="text-tipo"
-                onChange={(e) => seleccion(e.target.value)}
-              >
-                <option value="Verbo">Verbo</option>
-                <option value="Sustantivo">Sustantivo</option>
-                <option value="Adjetivo">Adjetivo</option>
-              </select>
+            <div className="d-flex w-100">
+              <div className="w-50">
+                <label htmlFor="text-tipo-2">Tipo de palabra:</label>
+
+                <select
+                  name="text-tipo"
+                  id="text-tipo-2"
+                  onChange={(e) => seleccion(e.target.value)}
+                >
+                  <option value="Verbo">Verbo</option>
+                  <option value="Sustantivo">Sustantivo</option>
+                  <option value="Adjetivo">Adjetivo</option>
+                </select>
+              </div>
+
+              <div className="w-50">
+                <label htmlFor="text-tipo-3">Elige un color:</label>
+                <select name="text-color-verb" id="text-tipo-3">
+                  <option value="purple">purple</option>
+                  <option value="Rose">Rose</option>
+                  <option value="Green">Green</option>
+                </select>
+              </div>
             </div>
             <label htmlFor="text-title-verb"> Titulo: </label>
             <input
-              type="text-title-verb"
+              type="text"
               id="text-title-verb"
               name="text-title-verb"
               required
             />
             <label htmlFor="text-mean"> Significado: </label>
-            <input type="text-mean" id="text-mean" name="text-mean" required />
+            <input type="text" id="text-mean" name="text-mean" required />
 
             <label htmlFor="text-ich"> ich: </label>
-            <input type="text-ich" id="text-ich" name="text-ich" required />
+            <input type="text" id="text-ich" name="text-ich" required />
             <label htmlFor="text-du"> du: </label>
-            <input type="text-du" id="text-du" name="text-du" required />
+            <input type="text" id="text-du" name="text-du" required />
             <label htmlFor="text-er"> er/sie/es: </label>
-            <input type="text-er" id="text-er" name="text-er" required />
+            <input type="text" id="text-er" name="text-er" required />
             <label htmlFor="text-ihr"> ihr: </label>
-            <input type="text-ihr" name="text-ihr" id="text-ihr" required />
+            <input type="text" name="text-ihr" id="text-ihr" required />
             <label htmlFor="text-wir"> wir/Sie: </label>
-            <input type="text-wir" name="text-wir" id="text-wir" required />
-            <select name="text-color-verb" id="text-color-verb">
-              <option value="purple">purple</option>
-              <option value="Rose">Rose</option>
-              <option value="Green">Green</option>
-              <option value=""></option>
-            </select>
+            <input type="text" name="text-wir" id="text-wir" required />
+
             <button type="submit" className="button-verb button ">
               Agregar
             </button>
@@ -230,11 +238,13 @@ export default (props) => {
             onSubmit={addAdj}
           >
             <h3 id="form-title"> Añadir palabras! </h3>
-            <label for="text-tipo">Elige el tipo de palabra a agregar:</label>
+            <label htmlFor="text-tipo-4">
+              Elige el tipo de palabra a agregar:
+            </label>
             <div className="text-tipo">
               <select
                 name="text-tipo"
-                id="text-tipo"
+                id="text-tipo-4"
                 onChange={(e) => seleccion(e.target.value)}
               >
                 <option value="Verbo">Verbo</option>

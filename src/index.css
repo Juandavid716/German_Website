@@ -214,6 +214,12 @@ tr:nth-child(even) {
   margin: 0 auto;
   align-self: center;
   border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+.button-verb:hover {
+  background-color: #333;
+  color: white;
 }
 
 .sustantive-container {
@@ -227,10 +233,22 @@ tr:nth-child(even) {
 
 .button-notlog {
   background-color: #212529;
+  color: white;
   margin: 0 auto;
 }
 
 /* -------------------- */
+.d-flex {
+  display: flex;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-100 {
+  width: 100%;
+}
 
 .formulario-auth {
   width: 450px;
@@ -238,11 +256,15 @@ tr:nth-child(even) {
   padding: 10px 20px;
   box-sizing: border-box;
 }
+
 #form-title {
   text-align: center;
+  margin: 0.5em 0 1em;
 }
+
 .box-form {
   background: rgba(233, 233, 233, 0.5);
+  border-radius: 5px;
 }
 
 .back-img {
@@ -251,27 +273,37 @@ tr:nth-child(even) {
   margin-top: 0;
   position: relative;
 }
-#text-tipo {
-  margin-bottom: 5px;
-  margin-top: 10px;
+
+.formulario-auth select {
+  margin-bottom: 10px;
+  margin-top: 5px;
 }
+
 .auth-div {
   display: flex;
   align-items: center;
   height: 100vh;
+  min-height: 660px;
   background-image: url("./imgs/ansgar-scheffold-gGI9zZKMG4g-unsplash.jpg");
   background-size: cover;
   background-position: center;
 }
+
 .prueba-cambio {
   height: 150vh;
 }
-.formulario-auth input,
-label {
+
+.formulario-auth label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.formulario-auth input {
   width: 100%;
-  margin-bottom: 20px;
-  padding: 7px;
+  margin-bottom: 10px;
+  padding: 5px;
   box-sizing: border-box;
+  display: block;
 }
 
 @media (max-width: 900px) {
