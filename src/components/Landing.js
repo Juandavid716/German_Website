@@ -52,7 +52,7 @@ function Landing() {
         <div className="git-father">
           <div className="git-button-1">
             <a
-              class="github-button"
+              className="github-button"
               href="https://github.com/juandavid716"
               aria-label="Follow @juandavid716 on GitHub"
             >

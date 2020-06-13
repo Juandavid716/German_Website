@@ -22,7 +22,7 @@ export default (props) => {
   return (
     <div className="auth-div">
       {!user && (
-        <div className="formulario-auth">
+        <div className="formulario-auth box-form">
           <h3> Bienvenido </h3>
           <label htmlFor="email"> Correo electrónico</label>
           <input
