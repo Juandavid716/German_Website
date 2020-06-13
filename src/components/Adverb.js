@@ -165,6 +165,47 @@ const prepositions = [
       "cerca de (next to)",
     ],
   },
+  {
+    title: "Akkusative Präpositionen",
+    wörter: ["bis", "durch", "für", "gegen", "ohne", "um"],
+    pal: [
+      "hasta",
+      "a través de, por medio de ",
+      "para, por (tiempo)",
+      "contra",
+      "sin",
+      "alrededor de, por(tiempo)",
+    ],
+  },
+  {
+    title: "Dative Präpositionen",
+    wörter: [
+      "ab",
+      "aus",
+      "außer",
+      "bei",
+      "gegenüber",
+      "mit",
+      "nach",
+      "von",
+      "seit",
+      "zu",
+      "entsprechend",
+    ],
+    pal: [
+      "a partir de, desde",
+      "de (lugar, procedencia)",
+      "sin, excepto",
+      "junto a",
+      "enfrente a",
+      "con",
+      "hacia, después",
+      "de",
+      "desde",
+      "hacia, a , a casa de",
+      "según",
+    ],
+  },
 ];
 const pronouns = [
   {
