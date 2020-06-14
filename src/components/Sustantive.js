@@ -1125,12 +1125,13 @@ class App extends Component {
       cancelButtonColor: "#d33",
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
-      console.log(result);
-      if (result.value) {
+      if (result.value && saveTarget !== "") {
         db.ref(`objetos/${saveTarget}`).remove();
 
         Swal.fire("Deleted!", "The selected item has been deleted.", "success");
         setTimeout(window.location.reload(), 2000);
+      } else {
+        alert("It element can not be deleted by this button");
       }
     });
   }
