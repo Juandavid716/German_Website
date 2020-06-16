@@ -97,6 +97,7 @@ export default (props) => {
       c4: "Ihr " + form["text-ihr"].value,
       c5: "Wir/Sie " + form["text-wir"].value,
       color: form["text-color-verb"].value,
+      fact: form["text-tipo-4"].value,
     };
 
     db.ref(`verbos/${userData.title}`).set(userData);
@@ -198,6 +199,11 @@ export default (props) => {
                   <option value="purple">purple</option>
                   <option value="Rose">Rose</option>
                   <option value="Green">Green</option>
+                  <option value="">nada</option>
+                </select>
+                <select name="text-tipo-4" id="text-tipo-4">
+                  <option value="presente">presente</option>
+                  <option value="pasado">pasado</option>
                 </select>
               </div>
             </div>

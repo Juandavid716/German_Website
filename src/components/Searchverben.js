@@ -1,32 +1,29 @@
-import React, { useState } from 'react';
-import Boxver from './boxver';
+import React, { useState } from "react";
+import Boxver from "./boxver";
 
-const prueba = [
-  {
-    title: 'Hatten',
-    mean: 'Tener (Präteritum)',
-    c1: 'Ich hatte',
-    c2: ' Du hattest',
-    c3: 'Er/sie/es hatte',
-    c4: 'Ihr setzt hattet',
-    c5: 'Wir/Sie hatten',
-    color: '',
-  },
-];
 export const Searchverben = (props) => {
   // const [word, setWord] = useState("");
 
   const [filterDisplay, setFilterDisplay] = useState(props.karte);
   const [state, setstate] = useState(props.karte);
+
   function change(e) {
-    if (e === 'Präteritum') {
-      setFilterDisplay(prueba);
-      setstate(prueba);
-    } else if (e === 'Präsens') {
+    if (e === "Präteritum") {
+      let tmp = [];
+
+      state.forEach((element) => {
+        if (element.fact === "pasado") {
+          tmp.push(element);
+        }
+      });
+
+      setstate(tmp);
+      setFilterDisplay(tmp);
+    } else if (e === "Präsens") {
       setFilterDisplay(props.karte);
       setstate(props.karte);
     }
-    document.getElementById('search-input').value = '';
+    document.getElementById("search-input").value = "";
   }
   const handleChange = (e) => {
     let oldList = state.map((karte) => {
@@ -42,7 +39,7 @@ export const Searchverben = (props) => {
       };
     });
     console.log(oldList);
-    if (e !== '') {
+    if (e !== "") {
       let newList = [];
       //setWord(e);
 
@@ -84,7 +81,7 @@ export const Searchverben = (props) => {
         placeholder="schreibe ein Verb.."
       ></input>
       <div className="bartext">
-        {' '}
+        {" "}
         Anzahl der Verben: {filterDisplay.length} von {props.karte.length}
       </div>
 
