@@ -9,7 +9,7 @@ function Box(props) {
         <div className={`box-text ${props.color}`}>
           <h1> {props.title}</h1>
 
-          {user && (
+          {user && props.funct && (
             <div className="delete-button">
               <button
                 id={props.title}

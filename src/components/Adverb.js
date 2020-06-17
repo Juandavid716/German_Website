@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Table from "./Table";
+import Box from "./box";
 const array = [
   {
     title: "Temporales",
@@ -302,15 +303,19 @@ class Adverb extends Component {
       words: false,
     };
   }
+
   change(event) {
     if (event === "Adverb") {
-      this.setState({ array: array });
+      this.setState({ array: array, words: false });
     } else if (event === "Präpositionen") {
-      this.setState({ array: prepositions });
+      this.setState({ array: prepositions, words: false });
     } else if (event === "pronouns") {
-      this.setState({ array: pronouns });
+      this.setState({ array: pronouns, words: false });
+    } else if (event === "vocab") {
+      this.setState({ words: true });
     }
   }
+
   render() {
     return (
       <section className="container">
@@ -336,6 +341,13 @@ class Adverb extends Component {
           >
             Pronouns
           </button>
+          <button
+            className="button gray button-adv"
+            value="vocab"
+            onClick={(e) => this.change(e.target.value)}
+          >
+            Vocab Trainer
+          </button>
         </div>
 
         <div className="tables-container">
@@ -349,7 +361,21 @@ class Adverb extends Component {
             })}{" "}
         </div>
 
-        {this.state.words && <div>quee</div>}
+        {this.state.words && (
+          <div className="pos">
+            <Box
+              title={"Der Ort"}
+              color={"Blue"}
+              text={"sdf"}
+              traduccion={"sdfd"}
+              imagen={"../imgs/DerOrt.jpg"}
+              key={"sdfsdf"}
+              update={"sdf"}
+              funct={false}
+            ></Box>
+            <button className="button gray">Siguiente </button>
+          </div>
+        )}
       </section>
     );
   }
