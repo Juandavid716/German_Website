@@ -299,6 +299,7 @@ class Adverb extends Component {
     super(props);
     this.state = {
       array: array,
+      words: false,
     };
   }
   change(event) {
@@ -336,15 +337,19 @@ class Adverb extends Component {
             Pronouns
           </button>
         </div>
+
         <div className="tables-container">
-          {this.state.array.map((karte, index) => {
-            return (
-              <Table key={index} array={karte}>
-                {" "}
-              </Table>
-            );
-          })}
+          {!this.state.words &&
+            this.state.array.map((karte, index) => {
+              return (
+                <Table key={index} array={karte}>
+                  {" "}
+                </Table>
+              );
+            })}{" "}
         </div>
+
+        {this.state.words && <div>quee</div>}
       </section>
     );
   }
