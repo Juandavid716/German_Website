@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import Table from "./Table";
 import Box from "./box";
-import { useUser } from "reactfire";
+import firebase from "firebase/app";
+import "firebase/auth";
+
+import "./fbconfig";
 const array = [
   {
     title: "Temporales",
@@ -296,14 +299,16 @@ const pronouns = [
     pal: ["my", "your", "his", "her", "its", "our", "your", "their", "your"],
   },
 ];
+
 class Adverb extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
       array: array,
       words: false,
+      user: firebase.auth().currentUser,
     };
-    const user = useUser();
   }
 
   change(event) {
@@ -343,13 +348,17 @@ class Adverb extends Component {
           >
             Pronouns
           </button>
-          <button
-            className="button gray button-adv"
-            value="vocab"
-            onClick={(e) => this.change(e.target.value)}
-          >
-            Vocab Trainer
-          </button>
+          {this.state.user && (
+            <div>
+              <button
+                className="button gray button-adv"
+                value="vocab"
+                onClick={(e) => this.change(e.target.value)}
+              >
+                Vocab Trainer
+              </button>{" "}
+            </div>
+          )}
         </div>
 
         <div className="tables-container">
