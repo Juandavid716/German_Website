@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Table from "./Table";
 import Box from "./box";
+import { useUser } from "reactfire";
 const array = [
   {
     title: "Temporales",
@@ -302,6 +303,7 @@ class Adverb extends Component {
       array: array,
       words: false,
     };
+    const user = useUser();
   }
 
   change(event) {

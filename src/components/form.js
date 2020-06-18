@@ -204,6 +204,7 @@ export default (props) => {
                 <select name="text-tipo-4" id="text-tipo-4">
                   <option value="presente">presente</option>
                   <option value="pasado">pasado</option>
+                  <option value="perfecto">perfecto</option>
                 </select>
               </div>
             </div>

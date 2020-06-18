@@ -8,20 +8,26 @@ export const Searchverben = (props) => {
   const [state, setstate] = useState(props.karte);
 
   function change(e) {
+    let tmp = [];
     if (e === "Präteritum") {
-      let tmp = [];
-
       state.forEach((element) => {
         if (element.fact === "pasado") {
           tmp.push(element);
         }
       });
 
-      setstate(tmp);
       setFilterDisplay(tmp);
     } else if (e === "Präsens") {
       setFilterDisplay(props.karte);
       setstate(props.karte);
+    } else if (e === "Perfekt") {
+      state.forEach((element) => {
+        if (element.fact === "perfecto") {
+          tmp.push(element);
+        }
+      });
+
+      setFilterDisplay(tmp);
     }
     document.getElementById("search-input").value = "";
   }
@@ -71,6 +77,13 @@ export const Searchverben = (props) => {
           onClick={(e) => change(e.target.value)}
         >
           Präsens
+        </button>
+        <button
+          className="button-verb button"
+          value="Perfekt"
+          onClick={(e) => change(e.target.value)}
+        >
+          Perfekt
         </button>
       </div>
 
