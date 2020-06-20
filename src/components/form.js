@@ -8,7 +8,12 @@ import "./fbconfig";
 
 //import "./storagefiles";
 export default (props) => {
-  const [verb, setverb] = useState({ adj: false, verb: false, sus: true });
+  const [verb, setverb] = useState({
+    adj: false,
+    verb: false,
+    sus: true,
+    word: false,
+  });
   const user = useUser();
   //const firebase = useFirebaseApp();
   //const auth = firebase.auth();
@@ -73,7 +78,27 @@ export default (props) => {
       c2: form["text-c2"].value,
     };
 
-    db.ref(`adj/${userData.title}`).set(userData);
+    db.ref(`adj/${userData.c1}`).set(userData);
+    var elements = document.getElementsByTagName("input");
+    for (var ii = 0; ii < elements.length; ii++) {
+      if (elements[ii].type === "text") {
+        elements[ii].value = "";
+      }
+    }
+  }
+  function addWord(e) {
+    e.preventDefault();
+    const form = document.forms[0];
+
+    //event.preventDefault();
+    //var nameValue = document.getElementById("text-title").value;
+
+    const userData = {
+      c1: form["text-c3"].value,
+      c2: form["text-c4"].value,
+    };
+
+    db.ref(`word/${userData.c1}`).set(userData);
     var elements = document.getElementsByTagName("input");
     for (var ii = 0; ii < elements.length; ii++) {
       if (elements[ii].type === "text") {
@@ -112,12 +137,14 @@ export default (props) => {
     //console.log(e);
 
     if (e === "Verbo") {
-      setverb({ adj: false, verb: true, sus: false });
+      setverb({ adj: false, verb: true, sus: false, word: false });
       console.log(true);
     } else if (e === "Sustantivo") {
-      setverb({ adj: false, verb: false, sus: true });
+      setverb({ adj: false, verb: false, sus: true, word: false });
     } else if (e === "Adjetivo") {
-      setverb({ adj: true, verb: false, sus: false });
+      setverb({ adj: true, verb: false, sus: false, word: false });
+    } else if (e === "Words") {
+      setverb({ adj: false, verb: false, sus: false, word: true });
     }
   }
 
@@ -144,6 +171,7 @@ export default (props) => {
               <option value="Sustantivo">Sustantivo</option>
               <option value="Verbo">Verbo</option>
               <option value="Adjetivo">Adjetivo</option>
+              <option value="Words"> Palabras </option>
             </select>
 
             <label htmlFor="text-title"> Titulo: </label>
@@ -190,6 +218,7 @@ export default (props) => {
                   <option value="Verbo">Verbo</option>
                   <option value="Sustantivo">Sustantivo</option>
                   <option value="Adjetivo">Adjetivo</option>
+                  <option value="Words"> Palabras </option>
                 </select>
               </div>
 
@@ -257,6 +286,7 @@ export default (props) => {
                 <option value="Verbo">Verbo</option>
                 <option value="Sustantivo">Sustantivo</option>
                 <option value="Adjetivo">Adjetivo</option>
+                <option value="Words"> Palabras </option>
               </select>
             </div>
 
@@ -265,6 +295,43 @@ export default (props) => {
 
             <label htmlFor="text-c2"> Traduccion: </label>
             <input type="text-c2" id="text-c2" name="text-c2" required />
+
+            <button type="submit" className="button-verb button ">
+              Agregar
+            </button>
+          </form>
+        </div>
+      )}{" "}
+      {user && verb.word && (
+        <div className="auth-div">
+          <form
+            id="form-name"
+            name="form-name"
+            className="formulario-auth box-form"
+            onSubmit={addWord}
+          >
+            <h3 id="form-title"> Añadir palabras! </h3>
+            <label htmlFor="text-tipo-4">
+              Elige el tipo de palabra a agregar:
+            </label>
+            <div className="text-tipo">
+              <select
+                name="text-tipo"
+                id="text-tipo-4"
+                onChange={(e) => seleccion(e.target.value)}
+              >
+                <option value="Verbo">Verbo</option>
+                <option value="Sustantivo">Sustantivo</option>
+                <option value="Adjetivo">Adjetivo</option>
+                <option value="Words"> Palabras </option>
+              </select>
+            </div>
+
+            <label htmlFor="text-c1"> Palabras o frases: </label>
+            <input type="text-c3" id="text-c3" name="text-c3" required />
+
+            <label htmlFor="text-c2"> Traduccion: </label>
+            <input type="text-c4" id="text-c4" name="text-c4" required />
 
             <button type="submit" className="button-verb button ">
               Agregar

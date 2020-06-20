@@ -4,6 +4,7 @@ import Box from "./box";
 import firebase from "firebase/app";
 import "firebase/auth";
 
+import { Searchadj } from "./Searchadj";
 import "./fbconfig";
 const array = [
   {
@@ -307,19 +308,57 @@ class Adverb extends Component {
     this.state = {
       array: array,
       words: false,
+      swords: false,
+      list: [{ c1: "alt / jung", c2: "viejo / joven" }],
       user: firebase.auth().currentUser,
     };
   }
+  componentDidMount() {
+    this.fetchData();
+  }
+  fetchData = async () => {
+    var data1 = [];
+    var data2 = {};
+    var fireBaseResponse = firebase.database().ref("word/");
+    var contador = this.state.list.length;
+    var stateCopy = Object.assign({}, this.state);
+    fireBaseResponse.once("value").then((snapshot) => {
+      snapshot.forEach((item, index) => {
+        var temp = item.val();
 
+        data2 = temp;
+        data1.push(data2);
+        stateCopy.list[contador] = temp;
+
+        contador++;
+        return false;
+      });
+
+      this.setState({
+        array: array,
+        words: false,
+        swords: false,
+        list: stateCopy.list,
+      });
+    });
+  };
   change(event) {
     if (event === "Adverb") {
-      this.setState({ array: array, words: false });
+      this.setState({ array: array, words: false, swords: false });
     } else if (event === "Präpositionen") {
-      this.setState({ array: prepositions, words: false });
+      this.setState({ array: prepositions, words: false, swords: false });
     } else if (event === "pronouns") {
-      this.setState({ array: pronouns, words: false });
+      this.setState({ array: pronouns, words: false, swords: false });
     } else if (event === "vocab") {
-      this.setState({ words: true });
+      this.setState({ array: array, words: true, swords: false });
+    } else if (event === "special-words") {
+      console.log(this.state.list);
+      this.setState({
+        array: array,
+        words: false,
+        swords: true,
+        list: this.state.list,
+      });
     }
   }
 
@@ -348,7 +387,14 @@ class Adverb extends Component {
           >
             Pronouns
           </button>
-          {this.state.user && (
+          <button
+            className="button gray button-adv"
+            value="special-words"
+            onClick={(e) => this.change(e.target.value)}
+          >
+            Words
+          </button>
+          {/* {this.state.user && (
             <div>
               <button
                 className="button gray button-adv"
@@ -358,11 +404,12 @@ class Adverb extends Component {
                 Vocab Trainer
               </button>{" "}
             </div>
-          )}
+          )} */}
         </div>
 
         <div className="tables-container">
           {!this.state.words &&
+            !this.state.swords &&
             this.state.array.map((karte, index) => {
               return (
                 <Table key={index} array={karte}>
@@ -385,6 +432,18 @@ class Adverb extends Component {
               funct={false}
             ></Box>
             <button className="button gray">Siguiente </button>
+          </div>
+        )}
+        {this.state.swords && (
+          <div className="">
+            {/* {this.state.list.map((karte) => {
+              return (
+                <Boxadj c1={karte.c1} c2={karte.c2} key={karte.c1}></Boxadj>
+              );
+            })} */}
+            <div className="">
+              <Searchadj karte={this.state.list} />
+            </div>
           </div>
         )}
       </section>
