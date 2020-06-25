@@ -162,8 +162,13 @@ th {
   text-align: center;
 }
 
-tr:nth-child(even) {
+.tr-table-color:nth-child(even) {
   background-color: #dddddd;
+}
+#table-prop {
+  font-size: 20px;
+  color: black;
+  font-weight: 600;
 }
 
 /* ============Not found============== */

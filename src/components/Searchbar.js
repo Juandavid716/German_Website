@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import Box from "./box";
 import { TableSustantive } from "./Table";
 export const Searchbar = (props) => {
-  //const [word, setWord] = useState("");
+  const [word, setWord] = useState("");
   // console.log(props.check);
+
   const [filterDisplay, setFilterDisplay] = useState(props.karte);
   const [state, setstate] = useState(props.karte);
   const [active, setactive] = useState(false);
@@ -30,6 +31,15 @@ export const Searchbar = (props) => {
       setstate(props.karte);
       setactive(false);
     } else if (e === "table-vocab") {
+      let listwords = props.karte.map((karte) => {
+        return {
+          wordgenre: karte.title,
+          plural: karte.text,
+          meaning: karte.traduccion,
+          color: karte.color,
+        };
+      });
+      setWord(listwords);
       setactive(true);
       setFilterDisplay([]);
     }
@@ -110,23 +120,7 @@ export const Searchbar = (props) => {
 
       {active && (
         <div>
-          <TableSustantive
-            data={[
-              {
-                wordgenre: "diee",
-                plural: "dsfsdf",
-                meaning: "dfg",
-                color: "red",
-              },
-              {
-                wordgenre: "diee",
-                plural: "xd",
-                meaning: "dfg",
-                color: "blue",
-              },
-            ]}
-          />
-          ;
+          <TableSustantive data={word} />;
         </div>
       )}
       {!active && (

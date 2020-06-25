@@ -9,7 +9,7 @@ function Table(props) {
 
   for (let index = 0; index < elements.length; index++) {
     table.push(
-      <tr key={index}>
+      <tr class="tr-table-color" key={index}>
         <td>{elements[index]}</td>
         <td>{palabras[index]}</td>
       </tr>
@@ -49,11 +49,10 @@ function TableSustantive(props) {
   const maintable = [];
   listwords.forEach((element) => {
     maintable.push(
-      <tr key={element.wordgenre}>
+      <tr class={element.color} id="table-prop" key={element.wordgenre}>
         <td>{element.wordgenre}</td>
         <td>{element.plural}</td>
         <td>{element.meaning}</td>
-        <td>{element.color}</td>
       </tr>
     );
   });
@@ -71,7 +70,6 @@ function TableSustantive(props) {
             <th>Artikel </th>
             <th>Plural</th>
             <th>Bedeutung</th>
-            <th>Übersetzung</th>
           </thead>
           <tbody>{maintable}</tbody>
         </table>
