@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^7.2.1",
     "firebase": "^7.14.6",
     "git-pages": "^0.8.1",
+    "google-tts-api": "0.0.4",
     "material-design-icons": "^3.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -16,6 +17,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
     "reactfire": "^2.0.3",
+    "say": "^0.16.0",
     "style-component": "0.0.1",
     "sweetalert2": "^9.14.4"
   },
