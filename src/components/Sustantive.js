@@ -1083,11 +1083,26 @@ class App extends Component {
             "https://firebasestorage.googleapis.com/v0/b/imgs-german-site.appspot.com/o/mund.jpg?alt=media&token=5ea5eb03-3901-4e9a-8321-5bc9418b53bf",
         },
       ],
+      supported: true,
+      lang: props.lang || "de-DE",
+      text: "",
+      autoPlay: false,
+      isSpeeking: false,
     };
   }
-
+  componentWillMount() {
+    if ("speechSynthesis" in window) {
+      this._speech = new SpeechSynthesisUtterance();
+      this._speech.onend = () => this.setState({ isSpeeking: false });
+    } else {
+      this.setState({ supported: false });
+    }
+  }
   componentDidMount() {
     this.fetchData();
+    if (this.state.supported && this.state.autoPlay) {
+      this.speak();
+    }
   }
   fetchData = async () => {
     var data1 = [];
@@ -1135,10 +1150,19 @@ class App extends Component {
       }
     });
   }
+  updateAudio(e) {
+    var saveTarget = e.currentTarget.id;
+    console.log(saveTarget);
+  }
   render() {
     return (
       <div className="sustantive-container">
-        <Searchbar karte={this.state.list} update={this.updateArray} />;
+        <Searchbar
+          karte={this.state.list}
+          update={this.updateArray}
+          listen={this.updateAudio}
+        />
+        ;
       </div>
     );
   }

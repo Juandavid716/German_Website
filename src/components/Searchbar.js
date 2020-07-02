@@ -140,6 +140,7 @@ export const Searchbar = (props) => {
                 imagen={karte.imagen}
                 key={karte.title}
                 update={props.update}
+                listen={props.listen}
                 funct={true}
               ></Box>
             );

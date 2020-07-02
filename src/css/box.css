@@ -139,6 +139,11 @@ html {
   border: none;
   background: none;
 }
+.btn-aud {
+  border: none;
+  background: none;
+}
+
 @media (max-width: 900px) {
   .box-father {
     width: 50%;

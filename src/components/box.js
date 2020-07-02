@@ -7,6 +7,15 @@ function Box(props) {
     <div className="box-father">
       <div className="box">
         <div className={`box-text ${props.color}`}>
+          <div>
+            <button
+              id={props.title}
+              class="material-icons btn-aud  "
+              onClick={props.listen.bind(this)}
+            >
+              volume_up
+            </button>
+          </div>
           <h1> {props.title}</h1>
 
           {user && props.funct && (
@@ -20,6 +29,7 @@ function Box(props) {
               </button>
             </div>
           )}
+
           <p>
             <em> {props.text}</em>
           </p>
