@@ -7,6 +7,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
+    "bootstrap": "^4.5.0",
     "firebase": "^7.14.6",
     "git-pages": "^0.8.1",
     "google-tts-api": "0.0.4",

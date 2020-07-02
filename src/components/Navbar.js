@@ -45,7 +45,7 @@ function Navb() {
           <NavLink to="/adverb" className="nav-link">
             Adverb
           </NavLink>
-          <NavLink to="/VOiceComponent" className="nav-link">
+          <NavLink to="/VoiceComponent" className="nav-link">
             +
           </NavLink>
           {!user && login}{" "}

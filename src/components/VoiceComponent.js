@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import "../css/voice.css";
 class VoiceComponent extends Component {
   constructor(props) {
     super(props);
@@ -44,20 +44,34 @@ class VoiceComponent extends Component {
   render() {
     const { text, isSpeeking } = this.state;
     return (
-      <div>
-        <textarea
-          value={text}
-          onChange={this.handleTextChange}
-          cols="40"
-          rows="10"
-        />
-        <br />
-        <button disabled={isSpeeking} onClick={this.speak}>
-          Speak
-        </button>
-        <button disabled={!isSpeeking} onClick={this.stop}>
-          Stop
-        </button>
+      <div class="voice-container container">
+        <div class="voice-text row">
+          <h1>Schreiben Sie einen Paragraph</h1>
+          <div>
+            <textarea
+              value={text}
+              onChange={this.handleTextChange}
+              cols="70"
+              rows="10"
+              id="text-area"
+            />
+            <br />
+            <button
+              class="button gray"
+              disabled={isSpeeking}
+              onClick={this.speak}
+            >
+              Speak
+            </button>
+            <button
+              class="button gray"
+              disabled={!isSpeeking}
+              onClick={this.stop}
+            >
+              Stop
+            </button>
+          </div>
+        </div>
       </div>
     );
   }

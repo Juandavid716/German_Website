@@ -57,6 +57,7 @@ function App() {
           <Form></Form>
         </Route>
         <Route exact path="/VoiceComponent">
+          <Navb></Navb>
           <VoiceComponent></VoiceComponent>
         </Route>
         <Route component={Page404} />
