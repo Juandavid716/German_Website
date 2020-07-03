@@ -45,13 +45,14 @@ class VoiceComponent extends Component {
     const { text, isSpeeking } = this.state;
     return (
       <div class="voice-container container">
-        <div class="voice-text row">
+        <div class="row"></div>
+        <div class="voice-text col-sm">
           <h1>Schreiben Sie einen Paragraph</h1>
           <div>
             <textarea
               value={text}
               onChange={this.handleTextChange}
-              cols="70"
+              cols="40"
               rows="10"
               id="text-area"
             />

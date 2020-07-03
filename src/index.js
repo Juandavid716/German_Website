@@ -15,7 +15,6 @@ ReactDOM.render(
         <App className="proof" />
       </Suspense>
     </React.StrictMode>
-    ,
   </FirebaseAppProvider>,
 
   document.getElementById("root")
