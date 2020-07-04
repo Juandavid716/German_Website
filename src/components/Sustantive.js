@@ -1090,15 +1090,14 @@ class App extends Component {
       isSpeeking: false,
     };
   }
-  componentWillMount() {
+
+  componentDidMount() {
     if ("speechSynthesis" in window) {
       this._speech = new SpeechSynthesisUtterance();
       this._speech.onend = () => this.setState({ isSpeeking: false });
     } else {
       this.setState({ supported: false });
     }
-  }
-  componentDidMount() {
     this.fetchData();
     if (this.state.supported && this.state.autoPlay) {
       this.speak();
@@ -1125,6 +1124,18 @@ class App extends Component {
       this.setState(stateCopy);
     });
   };
+
+  speak = () => {
+    this._speech.text = this.state.text;
+    this._speech.lang = this.state.lang;
+    this.setState({ isSpeeking: true });
+    window.speechSynthesis.speak(this._speech);
+  };
+
+  stop = () => {
+    window.speechSynthesis.cancel();
+  };
+
   updateArray(e) {
     //this.fetchData();
     // nombre del BOX console.log(e.currentTarget.id);
@@ -1150,10 +1161,12 @@ class App extends Component {
       }
     });
   }
-  updateAudio(e) {
+  updateAudio = (e) => {
     var saveTarget = e.currentTarget.id;
-    console.log(saveTarget);
-  }
+    this.setState({ text: saveTarget }, () => {
+      this.speak(this.state.text);
+    });
+  };
   render() {
     return (
       <div className="sustantive-container">

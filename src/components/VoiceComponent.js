@@ -11,16 +11,14 @@ class VoiceComponent extends Component {
       isSpeeking: false,
     };
   }
-  componentWillMount() {
+
+  componentDidMount() {
     if ("speechSynthesis" in window) {
       this._speech = new SpeechSynthesisUtterance();
       this._speech.onend = () => this.setState({ isSpeeking: false });
     } else {
       this.setState({ supported: false });
     }
-  }
-
-  componentDidMount() {
     if (this.state.supported && this.state.autoPlay) {
       this.speak();
     }
