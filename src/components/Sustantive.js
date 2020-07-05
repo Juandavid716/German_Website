@@ -3,7 +3,7 @@ import firebase from "firebase/app";
 import Swal from "sweetalert2";
 import { Searchbar } from "./Searchbar";
 import React, { Component } from "react";
-
+import "./box";
 class App extends Component {
   constructor(props) {
     super(props);
@@ -1088,10 +1088,12 @@ class App extends Component {
       text: "",
       autoPlay: false,
       isSpeeking: false,
+      img: "",
     };
   }
 
   componentDidMount() {
+    console.log(this.state.img);
     if ("speechSynthesis" in window) {
       this._speech = new SpeechSynthesisUtterance();
       this._speech.onend = () => this.setState({ isSpeeking: false });
@@ -1162,31 +1164,64 @@ class App extends Component {
     });
   }
   updateAudio = (e) => {
-    var saveTarget = e.currentTarget.id;
+    var saveTarget = e.currentTarget.name;
     this.setState({ text: saveTarget }, () => {
       this.speak(this.state.text);
     });
   };
-  updateimg(e) {
-    var saveTarget = e.currentTarget.id;
+  updateimg = (e) => {};
+  prueba = (e) => {
     const db = firebase.database();
 
     var val = db.ref(`objetos/`);
-    // val.on("value", function (snapshot) {
-    //   console.log(snapshot.val());
-    // });
+    var saveTarget = e.currentTarget.name;
+    console.log(saveTarget);
+    Swal.fire({
+      title: "Are you sure?",
+      text: "You won't be able to revert this!",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Yes, delete it!",
+    }).then((result) => {
+      var x = document.getElementById(saveTarget).files[0];
+      console.log(x);
+      val.once("value").then((snapshot) => {
+        var data = snapshot.val()[`${saveTarget}`];
+        const refStorage = firebase.storage().ref(`images/${x.name}`);
 
-    val.once("value").then((snapshot) => {
-      var data = snapshot.val()[`${saveTarget}`];
-      data["color"] = "Blue";
+        const task = refStorage.put(x);
+        task.on(
+          firebase.storage.TaskEvent.STATE_CHANGED,
+          function (snapshot) {
+            // Observe state change events such as progress, pause, and resume
+            // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
+            var progress =
+              (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+            console.log("Upload is " + progress + "% done");
+          },
+          function (error) {
+            // Handle unsuccessful uploads
+          },
+          function () {
+            // Handle successful uploads on complete
+            // For instance, get the download URL: https://firebasestorage.googleapis.com/...
+            task.snapshot.ref.getDownloadURL().then(function (downloadURL) {
+              data["imagen"] = downloadURL;
+              db.ref(`objetos/${saveTarget}`).set(data);
+              setTimeout(window.location.reload(), 4000);
+            });
+          }
+        );
 
-      db.ref(`objetos/${saveTarget}`).update(data);
-      // snapshot.forEach((item, index) => {
-      //   var temp = item.val();
-      //   console.log(temp);
-      // });
+        // snapshot.forEach((item, index) => {
+        //   var temp = item.val();
+        //   console.log(temp);
+        // });
+      });
     });
-  }
+  };
   render() {
     return (
       <div className="sustantive-container">
@@ -1195,6 +1230,7 @@ class App extends Component {
           update={this.updateArray}
           listen={this.updateAudio}
           getimg={this.updateimg}
+          prueba={this.prueba}
         />
         ;
       </div>

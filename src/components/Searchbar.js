@@ -142,6 +142,7 @@ export const Searchbar = (props) => {
                 update={props.update}
                 listen={props.listen}
                 getimg={props.getimg}
+                prueba={props.prueba}
                 funct={true}
               ></Box>
             );

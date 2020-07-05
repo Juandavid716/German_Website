@@ -7,9 +7,9 @@ function Box(props) {
     <div className="box-father">
       <div className="box">
         <div className={`box-text ${props.color}`}>
-          <div>
+          <div className="audio-div">
             <button
-              id={props.title}
+              name={props.title}
               className="material-icons btn-aud  "
               onClick={props.listen.bind(this)}
             >
@@ -17,7 +17,6 @@ function Box(props) {
             </button>
           </div>
           <h1> {props.title}</h1>
-
           {user && props.funct && (
             <div className="delete-button">
               <button
@@ -29,23 +28,34 @@ function Box(props) {
               </button>
             </div>
           )}
-
           <p>
             <em> {props.text}</em>
           </p>
           {props.imagen !== "" && (
             <img className="img-box" alt={props.title} src={props.imagen} />
           )}
-          <button
-            id={props.title}
-            className="material-icons"
-            onClick={props.getimg.bind(this)}
-          >
-            perm_media
-          </button>
+          {user && props.funct && (
+            <div>
+              <input
+                type="file"
+                name="img-sus"
+                accept="image/*"
+                id={props.title}
+                alt={props.title}
+                onClick={props.getimg.bind(this)}
+              ></input>
+              <button
+                name={props.title}
+                className="material-icons"
+                onClick={props.prueba.bind(this)}
+              >
+                perm_media
+              </button>
+            </div>
+          )}
           <p>
             <b> {props.traduccion}</b>
-          </p>
+          </p>{" "}
         </div>
       </div>
     </div>
