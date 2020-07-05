@@ -1141,7 +1141,7 @@ class App extends Component {
   updateArray(e) {
     //this.fetchData();
     // nombre del BOX console.log(e.currentTarget.id);
-    var saveTarget = e.currentTarget.id;
+    var saveTarget = e.currentTarget.name;
     const db = firebase.database();
 
     Swal.fire({

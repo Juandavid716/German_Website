@@ -20,7 +20,7 @@ function Box(props) {
           {user && props.funct && (
             <div className="delete-button">
               <button
-                id={props.title}
+                name={props.title}
                 className="material-icons btn-del"
                 onClick={props.update.bind(this)}
               >
