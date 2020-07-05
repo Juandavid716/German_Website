@@ -10,7 +10,7 @@ function Box(props) {
           <div>
             <button
               id={props.title}
-              class="material-icons btn-aud  "
+              className="material-icons btn-aud  "
               onClick={props.listen.bind(this)}
             >
               volume_up
@@ -33,7 +33,16 @@ function Box(props) {
           <p>
             <em> {props.text}</em>
           </p>
-          <img className="img-box" alt={props.title} src={props.imagen} />
+          {props.imagen !== "" && (
+            <img className="img-box" alt={props.title} src={props.imagen} />
+          )}
+          <button
+            id={props.title}
+            className="material-icons"
+            onClick={props.getimg.bind(this)}
+          >
+            perm_media
+          </button>
           <p>
             <b> {props.traduccion}</b>
           </p>

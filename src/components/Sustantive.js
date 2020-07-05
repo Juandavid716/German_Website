@@ -1167,6 +1167,26 @@ class App extends Component {
       this.speak(this.state.text);
     });
   };
+  updateimg(e) {
+    var saveTarget = e.currentTarget.id;
+    const db = firebase.database();
+
+    var val = db.ref(`objetos/`);
+    // val.on("value", function (snapshot) {
+    //   console.log(snapshot.val());
+    // });
+
+    val.once("value").then((snapshot) => {
+      var data = snapshot.val()[`${saveTarget}`];
+      data["color"] = "Blue";
+
+      db.ref(`objetos/${saveTarget}`).update(data);
+      // snapshot.forEach((item, index) => {
+      //   var temp = item.val();
+      //   console.log(temp);
+      // });
+    });
+  }
   render() {
     return (
       <div className="sustantive-container">
@@ -1174,6 +1194,7 @@ class App extends Component {
           karte={this.state.list}
           update={this.updateArray}
           listen={this.updateAudio}
+          getimg={this.updateimg}
         />
         ;
       </div>

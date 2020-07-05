@@ -25,8 +25,6 @@ export default (props) => {
 
     //event.preventDefault();
     //var nameValue = document.getElementById("text-title").value;
-
-    const file = form["img"].files[0];
     const userData = {
       title: form["text-title"].value,
       color: form["text-color"].value,
@@ -34,37 +32,54 @@ export default (props) => {
       traduccion: form["text-trd"].value,
       imagen: "",
     };
+    let file;
+    if (form["img"].files[0] === undefined) {
+      file = "";
+      db.ref(`objetos/${userData.title}`).set(userData);
 
-    const refStorage = firebase.storage().ref(`images/${file.name}`);
-
-    const task = refStorage.put(file);
-    task.on(
-      firebase.storage.TaskEvent.STATE_CHANGED,
-      function (snapshot) {
-        // Observe state change events such as progress, pause, and resume
-        // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
-        var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-        console.log("Upload is " + progress + "% done");
-      },
-      function (error) {
-        // Handle unsuccessful uploads
-      },
-      function () {
-        // Handle successful uploads on complete
-        // For instance, get the download URL: https://firebasestorage.googleapis.com/...
-        task.snapshot.ref.getDownloadURL().then(function (downloadURL) {
-          userData.imagen = downloadURL;
-          db.ref(`objetos/${userData.title}`).set(userData);
-          console.log("File available at", downloadURL);
-          var elements = document.getElementsByTagName("input");
-          for (var ii = 0; ii < elements.length; ii++) {
-            if (elements[ii].type === "text" || elements[ii].type === "file") {
-              elements[ii].value = "";
-            }
-          }
-        });
+      var elements = document.getElementsByTagName("input");
+      for (var ii = 0; ii < elements.length; ii++) {
+        if (elements[ii].type === "text" || elements[ii].type === "file") {
+          elements[ii].value = "";
+        }
       }
-    );
+    } else {
+      file = form["img"].files[0];
+      const refStorage = firebase.storage().ref(`images/${file.name}`);
+
+      const task = refStorage.put(file);
+      task.on(
+        firebase.storage.TaskEvent.STATE_CHANGED,
+        function (snapshot) {
+          // Observe state change events such as progress, pause, and resume
+          // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
+          var progress =
+            (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+          console.log("Upload is " + progress + "% done");
+        },
+        function (error) {
+          // Handle unsuccessful uploads
+        },
+        function () {
+          // Handle successful uploads on complete
+          // For instance, get the download URL: https://firebasestorage.googleapis.com/...
+          task.snapshot.ref.getDownloadURL().then(function (downloadURL) {
+            userData.imagen = downloadURL;
+            db.ref(`objetos/${userData.title}`).set(userData);
+
+            var elements = document.getElementsByTagName("input");
+            for (var ii = 0; ii < elements.length; ii++) {
+              if (
+                elements[ii].type === "text" ||
+                elements[ii].type === "file"
+              ) {
+                elements[ii].value = "";
+              }
+            }
+          });
+        }
+      );
+    }
   }
   function addAdj(e) {
     e.preventDefault();
