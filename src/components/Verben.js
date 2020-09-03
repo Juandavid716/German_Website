@@ -62,7 +62,7 @@ class Verben extends Component {
           mean: "Me gustaria",
           c1: "Ich möchte",
           c2: " Du möchtest",
-          c3: "Er/sie/es möchtet",
+          c3: "Er/sie/es möchte",
           c4: "Ihr möchtet",
           c5: "Wir/Sie möchten",
           color: "Rose",
